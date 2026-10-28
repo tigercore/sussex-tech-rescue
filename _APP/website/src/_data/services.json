@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "family",
+    "label": "Help for your parents",
+    "url": "/help-for-your-parents/",
+    "icon": "users",
+    "blurb": "Fed up being the family IT department? I'll be the one Mum or Dad calls, and I'll tell you how it went."
+  },
+  {
+    "slug": "own-pace",
+    "label": "Tech help at your own pace",
+    "url": "/tech-help-at-your-own-pace/",
+    "icon": "heart-handshake",
+    "blurb": "No silly questions, only silly computers. Patient help, never rushed."
+  },
+  {
+    "slug": "lessons",
+    "label": "Tech lessons",
+    "url": "/tech-lessons/",
+    "icon": "lightbulb",
+    "blurb": "One-to-one lessons at your kitchen table. Phones, computers, eBay, the lot. No homework."
+  },
+  {
+    "slug": "business",
+    "label": "Small business IT",
+    "url": "/business-it-support/",
+    "icon": "briefcase",
+    "blurb": "Your IT department, minus the department. Pay when you need me, no contracts."
+  },
+  {
+    "slug": "web",
+    "label": "Web design and local SEO",
+    "url": "/web-design-local-seo/",
+    "icon": "globe",
+    "blurb": "A website that brings in customers, and help getting Google to notice you."
+  },
+  {
+    "slug": "scams",
+    "label": "Been scammed?",
+    "url": "/been-scammed/",
+    "icon": "shield-alert",
+    "blurb": "Clicked a dodgy link or let someone on your computer? Don't panic. Start here."
+  },
+  {
+    "slug": "repairs",
+    "label": "Repairs and upgrades",
+    "url": "/computer-repairs-upgrades/",
+    "icon": "wrench",
+    "blurb": "Cracked screens, viruses, slow machines and upgrades. Free diagnosis, no fix no fee."
+  },
+  {
+    "slug": "data-recovery",
+    "label": "Data recovery",
+    "url": "/data-recovery/",
+    "icon": "hard-drive",
+    "blurb": "Lost photos or files? Stop, don't panic, ring me. They're often still there."
+  },
+  {
+    "slug": "m365",
+    "label": "Microsoft 365 and Google",
+    "url": "/microsoft-365-google-help/",
+    "icon": "cloud",
+    "blurb": "Outlook or Gmail sulking? OneDrive or Google Drive 'full'? Sorted, minus the head-scratching."
+  },
+  {
+    "slug": "smart-home",
+    "label": "Smart home help",
+    "url": "/smart-home-help/",
+    "icon": "house",
+    "blurb": "Doorbells, Alexa, cameras and heating that actually do what they're told."
+  },
+  {
+    "slug": "wifi",
+    "label": "Wi-Fi installation",
+    "url": "/wifi-installation/",
+    "icon": "router",
+    "blurb": "Wi-Fi in every room. Yes, even the loo. And the garden office."
+  },
+  {
+    "slug": "pc-builds",
+    "label": "Custom PC builds",
+    "url": "/custom-pc-builds/",
+    "icon": "gamepad-2",
+    "blurb": "A PC built for you, gaming or work, parts at cost. Extra fans, naturally."
+  },
+  {
+    "slug": "remote",
+    "label": "Remote help",
+    "url": "/remote-help/",
+    "icon": "monitor-smartphone",
+    "blurb": "I fix it over the internet while you watch. No kettle required."
+  }
+]

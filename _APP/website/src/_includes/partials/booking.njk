@@ -1,0 +1,67 @@
+{#- Set formProblem / formTown before including to preselect options. -#}
+<section class="section section-sea" id="book" aria-labelledby="book-heading">
+  <div class="container book-grid">
+    <div class="book-intro">
+      <p class="eyebrow">Get in touch</p>
+      <h2 id="book-heading">Tell me what's wrong</h2>
+      <p>Fill in this short form and I'll ring you back to find a time that suits. {{ site.replyPromise }}</p>
+      <p>Rather just talk to a real human? Same here. Ring me.</p>
+      <div class="btn-row">
+        <a href="tel:{{ site.phoneLink }}" class="btn btn-light">Call {{ site.phone }}</a>
+        <a href="https://wa.me/{{ site.whatsapp }}" class="btn btn-whatsapp">WhatsApp</a>
+      </div>
+      <p class="small">{{ site.hours }}</p>
+    </div>
+    <form class="booking-form" name="booking" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="booking">
+      <input type="hidden" name="page" value="{{ page.url }}">
+      <p class="visually-hidden"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <div class="field-row">
+        <div class="field"><label for="f-name-{{ page.fileSlug }}">Your name</label><input id="f-name-{{ page.fileSlug }}" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-phone-{{ page.fileSlug }}">Phone</label><input id="f-phone-{{ page.fileSlug }}" name="phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label for="f-email-{{ page.fileSlug }}">Email <span class="optional">(optional)</span></label><input id="f-email-{{ page.fileSlug }}" name="email" type="email" autocomplete="email"></div>
+        <div class="field"><label for="f-postcode-{{ page.fileSlug }}">Postcode</label><input id="f-postcode-{{ page.fileSlug }}" name="postcode" autocomplete="postal-code" required></div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-town-{{ page.fileSlug }}">Town</label>
+          <select id="f-town-{{ page.fileSlug }}" name="town">
+            {%- for t in towns %}<option{% if formTown == t.name %} selected{% endif %}>{{ t.name }}</option>{% endfor %}
+            <option>Somewhere else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-problem-{{ page.fileSlug }}">What do you need help with?</label>
+          <select id="f-problem-{{ page.fileSlug }}" name="problem">
+            <option>Computer or laptop</option>
+            <option>Wi-Fi or internet</option>
+            <option>Phone or tablet</option>
+            <option>Printer</option>
+            <option>TV or streaming</option>
+            <option>Virus or scam</option>
+            {%- for s in services %}{% if s.slug != "scams" %}<option{% if formProblem == s.label %} selected{% endif %}>{{ s.label }}</option>{% endif %}{% endfor %}
+            <option>Something else</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-when-{{ page.fileSlug }}">When suits you?</label>
+        <select id="f-when-{{ page.fileSlug }}" name="when">
+          <option>As soon as possible</option>
+          <option>Weekday morning</option>
+          <option>Weekday afternoon</option>
+          <option>Saturday</option>
+          <option>I'm flexible</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-msg-{{ page.fileSlug }}">What's the problem? <span class="optional">(in your own words)</span></label>
+        <textarea id="f-msg-{{ page.fileSlug }}" name="message" rows="4" placeholder="Write it however you like. For example: my laptop has gone slower than a deckchair queue in August and a message keeps popping up"></textarea>
+      </div>
+      <button type="submit" class="btn btn-accent btn-block">Send it to Ryan!</button>
+      <p class="small">I only use your details to reply to you. See my <a href="/privacy/">privacy notice</a>.</p>
+    </form>
+  </div>
+</section>

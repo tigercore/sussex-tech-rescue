@@ -1,0 +1,57 @@
+<section class="section section-sea" id="family-book" aria-labelledby="family-book-heading">
+  <div class="container book-grid">
+    <div class="book-intro">
+      <p class="eyebrow">Arranging help for someone else</p>
+      <h2 id="family-book-heading">Tell me about you and your parent</h2>
+      <p>Fill in your details and theirs. I'll call you first to talk it through, then contact your parent directly to arrange a time that suits them.</p>
+      <p>Nothing is booked or charged until you've spoken to me.</p>
+      <div class="btn-row">
+        <a href="tel:{{ site.phoneLink }}" class="btn btn-light">Call {{ site.phone }}</a>
+        <a href="https://wa.me/{{ site.whatsapp }}" class="btn btn-whatsapp">WhatsApp</a>
+      </div>
+    </div>
+    <form class="booking-form" name="family" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="family">
+      <p class="visually-hidden"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <fieldset>
+        <legend>Your details</legend>
+        <div class="field-row">
+          <div class="field"><label for="fam-name">Your name</label><input id="fam-name" name="your-name" autocomplete="name" required></div>
+          <div class="field"><label for="fam-phone">Your phone</label><input id="fam-phone" name="your-phone" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><label for="fam-email">Your email</label><input id="fam-email" name="your-email" type="email" autocomplete="email" required></div>
+      </fieldset>
+      <fieldset>
+        <legend>Who the help is for</legend>
+        <div class="field-row">
+          <div class="field"><label for="fam-pname">Their name</label><input id="fam-pname" name="their-name" required></div>
+          <div class="field"><label for="fam-rel">They are your</label>
+            <select id="fam-rel" name="relationship"><option>Mum</option><option>Dad</option><option>Parents</option><option>Grandparent</option><option>Other relative</option><option>Friend or neighbour</option></select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="fam-ptown">Their town</label>
+            <select id="fam-ptown" name="their-town">{% for t in towns %}<option>{{ t.name }}</option>{% endfor %}<option>Somewhere else (remote help)</option></select>
+          </div>
+          <div class="field"><label for="fam-pphone">Their phone <span class="optional">(optional)</span></label><input id="fam-pphone" name="their-phone" type="tel"></div>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="fam-plan">Which option are you interested in?</label>
+        <select id="fam-plan" name="plan">
+          <option>{{ prices.plans.oneOff.name }}</option>
+          <option>{{ prices.plans.monthly.name }} (one person)</option>
+          <option>{{ prices.plans.monthly.name }} (couple)</option>
+          <option>Not sure yet, please advise</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fam-msg">What do they need help with?</label>
+        <textarea id="fam-msg" name="message" rows="4" placeholder="For example: Mum has a new iPad and wants to video call the grandchildren, but gets stuck with passwords"></textarea>
+      </div>
+      <div class="field checkbox"><label><input type="checkbox" name="send-updates" value="yes" checked> Send me a short update after each session (only if my parent agrees)</label></div>
+      <button type="submit" class="btn btn-accent btn-block">Send it to Ryan!</button>
+      <p class="small">I'll only use these details to arrange help. See my <a href="/privacy/">privacy notice</a>.</p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- set pageTitle = (title + " | " + site.name) if title else (site.name + " | " + site.tagline) %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ description or site.tagline }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ description or site.tagline }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:locale" content="en_GB">
+  <meta name="theme-color" content="#ffe03a">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <script>
+    // Fade-in-up on scroll: only when motion is welcome and the browser supports it.
+    if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("js-reveal");
+      setTimeout(function () { if (!window.__revealReady) document.documentElement.classList.remove("js-reveal"); }, 2500);
+    }
+  </script>
+  {#- Preload the fonts used above the fold, so text doesn't paint in a fallback font and then jump. #}
+  <link rel="preload" href="/assets/fonts/bangers-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/atkinson-hyperlegible-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/caveat-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/theme.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/loud.css">
+  {% include "partials/schema.njk" %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "partials/header.njk" %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <div class="mobile-bar" aria-label="Quick contact">
+    <a href="tel:{{ site.phoneLink }}" class="btn btn-primary">Call</a>
+    <a href="https://wa.me/{{ site.whatsapp }}" class="btn btn-whatsapp">WhatsApp</a>
+    <a href="/contact/#book" class="btn btn-light">Book</a>
+  </div>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

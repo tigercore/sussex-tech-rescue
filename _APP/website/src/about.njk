@@ -1,0 +1,84 @@
+---
+layout: layouts/base.njk
+permalink: /about/
+title: About Ryan
+description: Meet Ryan, who grew up in Eastbourne, spent 13 years working in tech in London, and came home to offer friendly, patient tech help across Eastbourne and Bexhill.
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">About me</p>
+      <h1>Who is this Ryan <span class="line2">anyway?</span></h1>
+      <p class="lede">Eastbourne born, London trained, back home by the sea. {{ site.name }} is a one-man band. When you ring, you get me. When the doorbell goes, it's me. No call centre, no robots, no "press 3 for more options".</p>
+    </div>
+    <figure class="snap">
+      {% photo "ryan", "Ryan, smiling on Eastbourne seafront", "portrait" %}
+      <figcaption>Hello, I'm Ryan</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow prose">
+    <h2>The story so far</h2>
+    <p>I grew up in Eastbourne. And Glasgow. And Billericay. And Bexhill. (We got about.) Then, like a lot of people, I headed to London for work and stayed 13 years. There I built websites, kept computer systems upright and led technical teams for the big boys: the likes of Barclays, British Airways and HSBC.</p>
+    <p>All told I've been doing IT for more than 25 years, which in computer years makes me roughly a dinosaur. But the sea kept calling, and eventually we moved back. Now I live here with my family and our cockapoo, and on a good day you'll find me sea swimming or walking on the South Downs.</p>
+    <p>Technology is now part of everyday life: the doctor, the bank, the shopping, keeping in touch with family. Plenty of people don't need a salesperson or a helpline. They need someone patient who'll explain things properly, have a bit of a laugh and never make them feel silly. That's me.</p>
+  </div>
+</section>
+
+<section class="section section-tint" aria-labelledby="legit-heading">
+  <div class="container narrow prose">
+    <h2 id="legit-heading">"This site is silly. Do you actually know what you're doing?"</h2>
+    <p>Fair question. Yes! Under the comic fonts and the bad jokes there's a proper tech nerd, with the paperwork to prove it.</p>
+    <ul>
+      <li><strong>A BSc in Multimedia Computing.</strong> Back when "multimedia" meant a CD-ROM with a wobbly video on it.</li>
+      <li><strong>More than 25 years in IT and digital.</strong> Websites, servers, networks, security, and the odd printer that just wanted attention.</li>
+      <li><strong>13 years in London tech</strong>, building and running systems for the likes of Barclays, British Airways and HSBC. If it's good enough for the banks, it's good enough for your Wi-Fi.</li>
+      <li><strong>Still learning.</strong> Tech changes every week, so I keep up with it. That way you don't have to.</li>
+    </ul>
+    <p>The silliness is on purpose. Tech is stressful enough without being talked down to. You get the know-how of someone who's looked after systems for big banks and airlines, explained like a mate over a cuppa.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="marketing-heading">
+  <div class="container split">
+    <div class="prose">
+      <h2 id="marketing-heading">Meet my head of marketing</h2>
+      <p>Every proper business needs a marketing department. Mine is short, very honest and works for biscuits.</p>
+      <p>Press play for the official verdict.</p>
+    </div>
+    <figure class="video-card">
+      <video controls playsinline preload="none" poster="/assets/video/head-of-marketing.jpg" width="406" height="720">
+        <source src="/assets/video/head-of-marketing.mp4" type="video/mp4">
+        Sorry, your browser can't play this video.
+      </video>
+      <figcaption>Exhibit A: my head of marketing</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section section-sand">
+  <div class="container split">
+    <figure class="snap snap-right">
+      {% photo "ryan-dog", "Ryan and his cockapoo on the South Downs", "landscape" %}
+      <figcaption>Off duty. Phone on silent. Ish.</figcaption>
+    </figure>
+    <div class="prose">
+      <h2>The Sussex Tech Rescue rules</h2>
+      <ul>
+        <li><strong>Honest.</strong> If something isn't worth fixing, I'll say so. If it's a five-minute job, you only pay for half an hour, not a whole one. If it just needed turning off and on again, I'll tell you. (Gently.)</li>
+        <li><strong>Patient.</strong> No jargon, no eye-rolling, and as many questions as you like.</li>
+        {% if site.dbs %}<li><strong>{{ site.dbs }}.</strong> You can feel at ease having me in your home, or your parents' home.</li>{% endif %}
+        <li><strong>Careful with your things.</strong> I've spent years responsible for keeping data safe, and I treat your photos, emails and accounts with the same care.</li>
+        <li><strong>Local.</strong> This is home. You'll see the same friendly face every time.</li>
+      </ul>
+      <div class="btn-row">
+        <a href="tel:{{ site.phoneLink }}" class="btn btn-primary">Call {{ site.phone }}</a>
+        <a href="/contact/#book" class="btn btn-accent">Book a visit</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "partials/reviews.njk" %}
+{% include "partials/cta.njk" %}

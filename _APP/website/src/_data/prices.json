@@ -1,0 +1,27 @@
+{
+  "_note": "All prices in pounds. Change them here and every page updates.",
+  "hourly": 45,
+  "halfHour": "22.50",
+  "billing": "Charged per 30 minutes",
+  "diagnosis": "Free diagnosis",
+  "noFixNoFee": "No fix, no fee",
+  "remote30": 25,
+  "remote60": 45,
+  "travel": "No travel charge anywhere in my usual area.",
+  "noFixNote": "No fix, no fee: if I can't sort it, you don't pay a penny.",
+  "plans": {
+    "_note": "Placeholder plan prices. Change here.",
+    "oneOff": {
+      "name": "One-off help",
+      "summary": "For a single problem, or to try me out first."
+    },
+    "monthly": {
+      "name": "Peace of Mind plan",
+      "price": 29,
+      "couplePrice": 39,
+      "welcomeMinutes": 90,
+      "notice": "one month's notice",
+      "memberHourly": 35
+    }
+  }
+}

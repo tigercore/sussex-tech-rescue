@@ -1,0 +1,178 @@
+---
+layout: layouts/base.njk
+description: Friendly, patient help with computers, phones, tablets, printers and Wi-Fi at home in Eastbourne, Bexhill and East Sussex. Plain English, no rushing, price agreed first.
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Eastbourne · Bexhill · the Sunshine Coast</p>
+      <h1><span class="visually-hidden">Computer playing up? </span><span aria-hidden="true"><span class="rotate-word" data-words="Computer,iPad,Alexa,Phone,Laptop,Printer,Wi-Fi,Telly,Email,Tablet">Computer</span> playing up? </span><span class="line2">Ryan's on it!</span></h1>
+      <p class="bubble">Tech fixes, tips &amp; banter!</p>
+      <p class="lede">Computers, phones, tablets, printers, Wi-Fi: if it beeps, flashes or sulks, I'll come round, sort it out and explain it in plain English. No jargon. No judgement. Biscuits optional.</p>
+      <div class="btn-row">
+        <a href="tel:{{ site.phoneLink }}" class="btn btn-primary">Call {{ site.phone }}</a>
+        <a href="#book" class="btn btn-accent">Book a visit</a>
+        <a href="https://wa.me/{{ site.whatsapp }}" class="btn btn-whatsapp">WhatsApp</a>
+      </div>
+      <ul class="chips">
+        <li>I come to you</li>
+        <li>{{ prices.diagnosis }}</li>
+        <li>Price agreed first</li>
+        <li>Zero jargon</li>
+      </ul>
+    </div>
+    <div class="hero-art-wrap">
+      <picture><source srcset="/assets/photos/uncle-ryman-960.webp" type="image/webp"><img class="hero-img" src="/assets/photos/uncle-ryman-960.jpg" alt="Ryan pulling a silly face at his desk, surrounded by computers, a microphone and a rubber duck" width="960" height="960" fetchpriority="high" decoding="async"></picture>
+      <div class="burst"><span>Just<strong>{{ prices.hourly | gbp }}</strong>an hour!</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="strap">
+  <ul>
+    <li>{% icon "monitor-smartphone" %} Hardware</li>
+    <li>{% icon "wifi" %} Software</li>
+    <li>{% icon "wrench" %} Problems</li>
+    <li>{% icon "lightbulb" %} Solutions</li>
+    <li class="sticker">…and tea-break tech tips!</li>
+  </ul>
+</div>
+
+<div class="price-strip">
+  Just <strong>{{ prices.hourly | gbp }}</strong> an hour. {{ prices.diagnosis }}. {{ prices.noFixNoFee }}.
+</div>
+
+<section class="section" aria-labelledby="meet-heading">
+  <div class="container split">
+    <figure class="snap snap-right">
+      {% photo "ryan", "Ryan, smiling on Eastbourne seafront", "portrait" %}
+      <figcaption>Hello! That's me, Ryan</figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow">Who you'll be dealing with</p>
+      <h2 id="meet-heading">Who is this Ryan?</h2>
+      <p>I grew up in Eastbourne, spent 13 years working in technology in London, and then came home. These days I live here with my family and our cockapoo, and you'll often find me in the sea or up on the Downs.</p>
+      <p>I started {{ site.name }} to bring all that experience home, and use it to give people round here patient, practical help with the technology they rely on.</p>
+      <p>When you ring, you'll speak to me, not a call centre.</p>
+      <p class="signoff">Ryan</p>
+      <a href="/about/" class="btn btn-outline">More about me</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-sand" id="help" aria-labelledby="help-heading">
+  <div class="container">
+    <p class="eyebrow">What I help with</p>
+    <h2 id="help-heading">Things people ring me about</h2>
+    <p class="section-lede">Sound familiar? You're in good company. These are the things I'm asked about most.</p>
+    <ul class="ask-list">
+      {%- for f in fixes %}
+      <li>{% icon f.icon %}<div><strong>{{ f.ask }}</strong><span>{{ f.text }}</span></div></li>
+      {%- endfor %}
+    </ul>
+    <p class="ask-more"><span class="hand">Not on the list?</span> Ring anyway. I've probably seen it before. Twice.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="who-heading">
+  <div class="container">
+    <p class="eyebrow">Who I help</p>
+    <h2 id="who-heading">Help for you, your parents or your business</h2>
+    <div class="who-grid">
+      <a class="card card-link" href="#help"><span class="card-icon">{% icon "user" %}</span><h3>For me</h3><p>Something's not working at home, and you'd like someone to sort it and explain it kindly.</p></a>
+      <a class="card card-link" href="/help-for-your-parents/"><span class="card-icon">{% icon "users" %}</span><h3>For my mum or dad</h3><p>Arrange help for your parents. I'll deal with them directly and let you know how it went.</p></a>
+      <a class="card card-link" href="/business-it-support/"><span class="card-icon">{% icon "briefcase" %}</span><h3>For my business</h3><p>Pay-as-you-go IT help, websites and Google listings for small local businesses.</p></a>
+    </div>
+  </div>
+</section>
+
+{% include "partials/steps.njk" %}
+
+<section class="section section-tint" aria-labelledby="silly-heading">
+  <div class="container split split-reverse">
+    <figure class="snap">
+      {% photo "hands", "Close-up of Ryan showing a customer how to use her phone", "landscape" %}
+      <figcaption>Show me once more? Of course</figcaption>
+    </figure>
+    <div>
+      <p class="quote-big" id="silly-heading">"There's no such thing as a silly question!"</p>
+      <p>Lots of people tell me they feel left behind by technology, or they don't like to keep asking the family. That's completely normal. Things change so fast that even people in the business get confused.</p>
+      <p>I'll go at your pace, explain things as many times as you like, and write down the steps so you can do it yourself next time.</p>
+    </div>
+  </div>
+</section>
+
+{% include "partials/pricing.njk" %}
+
+<section class="section" aria-labelledby="compare-heading">
+  <div class="container">
+    <p class="eyebrow">Why people choose me</p>
+    <h2 id="compare-heading">A local person, not a helpline</h2>
+    <div class="compare">
+      <div class="compare-col compare-yes">
+        <p class="compare-tag">{% icon "thumbs-up" %} Pick me!</p>
+        <h3>{% icon "badge-check" %} Ryan (that's me!)</h3>
+        <ul>
+          <li>{% icon "check" %} The same friendly face every time</li>
+          <li>{% icon "check" %} I come to your home</li>
+          <li>{% icon "check" %} You know the price before I start</li>
+          <li>{% icon "check" %} Plain English, with time for questions</li>
+          <li>{% icon "check" %} Trusted and local</li>
+          <li>{% icon "check" %} Honest advice, nothing to sell you</li>
+        </ul>
+      </div>
+      <div class="compare-col compare-no">
+        <p class="compare-tag">{% icon "thumbs-down" %} The other lot</p>
+        <h3>{% icon "x" %} Helplines and big shops</h3>
+        <ul>
+          <li>{% icon "x" %} Hold music, then a different person each time</li>
+          <li>{% icon "x" %} Unplug it, carry it in, and wait days</li>
+          <li>{% icon "x" %} Surprise costs and extras</li>
+          <li>{% icon "x" %} Jargon you're too polite to question</li>
+          <li>{% icon "x" %} A stranger at the door, or no home visits at all</li>
+          <li>{% icon "x" %} A nudge to buy something new</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "partials/reviews.njk" %}
+
+<section class="section section-sand" aria-labelledby="more-heading">
+  <div class="container">
+    <p class="eyebrow">More ways I help</p>
+    <h2 id="more-heading">What else can I do?</h2>
+    <div class="card-grid">
+      {#- Parents help is already featured in the "Who I help" section above. #}
+      {%- for s in services %}{% if s.slug != "family" %}
+      <a class="card card-link" href="{{ s.url }}">
+        <span class="card-icon">{% icon s.icon %}</span>
+        <h3>{{ s.label }}</h3>
+        <p>{{ s.blurb }}</p>
+      </a>
+      {%- endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="areas-heading">
+  <div class="container split">
+    <figure class="snap">
+      {% photo "seafront", "Eastbourne seafront and pier on a sunny day", "landscape" %}
+      <figcaption>Home sweet home</figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow">Where I visit</p>
+      <h2 id="areas-heading">All along the Sunshine Coast</h2>
+      <p>I'm based in {{ site.base }} and visit homes all around the area. If you're not sure whether I cover you, just ask.</p>
+      <ul class="pill-links">
+        {%- for t in towns %}<li><a href="/computer-help-{{ t.slug }}/">{{ t.name }}</a></li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="doodle-wave" aria-hidden="true"></div>
+
+{% include "partials/booking.njk" %}

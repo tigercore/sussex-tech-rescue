@@ -1,0 +1,51 @@
+/* =========================================================
+   SUSSEX TECH RESCUE THEME
+   Loud, cheerful and proud of it. Every colour and font on
+   the site comes from these variables.
+   ========================================================= */
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("/assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("/assets/fonts/atkinson-hyperlegible-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Caveat"; src: url("/assets/fonts/caveat-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("/assets/fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Bangers"; src: url("/assets/fonts/bangers-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+
+:root {
+  /* Brand colours */
+  --color-primary: #111111;        /* ink black: headings, outlines, footer */
+  --color-primary-ink: #ffffff;
+  --color-secondary: #1747d1;      /* electric blue: links, banners (7.3:1 with white) */
+  --color-surf: #6fb6ff;
+  --color-sun: #ffe03a;            /* highlighter yellow */
+  --color-accent: #ffe03a;         /* main buttons */
+  --color-accent-hover: #ffd000;
+  --color-accent-ink: #111111;
+  --color-hot: #d1105a;            /* hot pink stickers (5.4:1 with white) */
+  --color-whatsapp: #0f7a3d;       /* 5.4:1 with white */
+  --color-yes: #0f7a3d;
+  --color-no: #e0311f;
+
+  /* Surfaces */
+  --color-bg: #fffdf2;
+  --color-surface: #ffffff;
+  --color-sand: #fff4b8;           /* pale yellow sections */
+  --color-tint: #e3ecff;           /* pale blue sections */
+  --color-sun-soft: #fff4b8;
+  --color-border: #111111;
+
+  /* Text */
+  --color-text: #161616;
+  --color-muted: #3d3d3d;
+
+  /* Type */
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-heading: "Bangers", "Impact", "Arial Black", system-ui, sans-serif;
+  --font-hand: "Caveat", "Bradley Hand", "Segoe Print", cursive;
+  --font-size-base: 1.15rem;
+
+  /* Shape */
+  --radius: 14px;
+  --radius-small: 10px;
+  --shadow: 6px 6px 0 #111111;     /* hard comic-book shadow */
+  --outline: 3px solid #111111;
+  --container: 1180px;
+}

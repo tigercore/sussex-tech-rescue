@@ -1,0 +1,14 @@
+{
+  "name": "sussex-tech-rescue",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sussex Tech Rescue: friendly tech help for Eastbourne, Bexhill and the East Sussex coast",
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7"
+  }
+}

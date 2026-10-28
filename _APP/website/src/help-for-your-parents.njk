@@ -1,0 +1,96 @@
+---
+layout: layouts/base.njk
+permalink: /help-for-your-parents/
+title: Tech help for your parents in Eastbourne and Bexhill
+description: Arrange patient, local tech help for your mum or dad in Eastbourne, Bexhill and East Sussex. One-off visits or a monthly Peace of Mind plan, with updates sent to you.
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">For sons, daughters and families</p>
+      <h1>Be their son or daughter, <span class="line2">not their IT department!</span></h1>
+      <p class="lede">If every visit home turns into fixing the iPad, or you've spent another Sunday saying "no, the OTHER button, Dad", hand it over to me. I'll be the friendly local person your parents can call, and I'll keep you in the loop.</p>
+      <div class="btn-row">
+        <a href="#plans" class="btn btn-accent">See the options</a>
+        <a href="tel:{{ site.phoneLink }}" class="btn btn-primary">Call {{ site.phone }}</a>
+      </div>
+      <ul class="chips">
+        <li>You book, I arrange it with them</li>
+        {% if site.dbs %}<li>{{ site.dbs }}</li>{% endif %}
+        <li>Updates sent to you</li>
+        <li>Visits at home or remote help</li>
+      </ul>
+    </div>
+    <figure class="snap">
+      {% photo "family", "An older lady on a video call with her family on a tablet", "landscape" %}
+      <figcaption>Seeing the grandchildren, no fuss</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="sound-heading">
+  <div class="container">
+    <h2 id="sound-heading">Does this sound horribly familiar?</h2>
+    <div class="card-grid">
+      <article class="card"><span class="card-icon">{% icon "phone" %}</span><h3>The Sunday tech-support call</h3><p>Half of every phone call is spent playing "describe what's on your screen". Nobody wins.</p></article>
+      <article class="card"><span class="card-icon">{% icon "car" %}</span><h3>You live too far away</h3><p>You can't pop round to fix the printer when you're an hour or more up the road.</p></article>
+      <article class="card"><span class="card-icon">{% icon "shield-alert" %}</span><h3>You worry about scams</h3><p>They're trusting and polite, and scammers know it. You'd like someone keeping an eye out.</p></article>
+      <article class="card"><span class="card-icon">{% icon "gift" %}</span><h3>They've got a new gadget</h3><p>It's been in the box since Christmas. They'd love to use it, if only someone would set it up and show them how.</p></article>
+      <article class="card"><span class="card-icon">{% icon "stethoscope" %}</span><h3>Doctors and banks are going online</h3><p>NHS App, repeat prescriptions, online banking. Things they now need, whether they like it or not.</p></article>
+      <article class="card"><span class="card-icon">{% icon "hand" %}</span><h3>They don't like to bother you</h3><p>So small problems pile up until something important stops working.</p></article>
+    </div>
+  </div>
+</section>
+
+{% include "partials/plans.njk" %}
+
+<section class="section" aria-labelledby="buying-heading">
+  <div class="container">
+    <p class="eyebrow">How it works</p>
+    <h2 id="buying-heading">Arranging help for someone else</h2>
+    <ol class="steps">
+      <li><span class="step-num">1</span><h3>Tell me about them</h3><p>Fill in the form or give me a ring. I'll chat about what they need and which option suits best.</p></li>
+      <li><span class="step-num">2</span><h3>I contact your parent</h3><p>I call them, introduce myself and book a time that suits them. You can be there or on the phone if you'd like.</p></li>
+      <li><span class="step-num">3</span><h3>You get an update</h3><p>After each session I send you a short note of what I did and anything to keep an eye on, if they're happy for me to.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-tint" aria-labelledby="trust-heading">
+  <div class="container two-col">
+    <div class="prose">
+      <h2 id="trust-heading">Safe hands. Same silly face every time.</h2>
+      <p>Your parents will deal with me, {{ site.owner }}, a local person with more than 25 years in IT, and not a call centre. I'm patient, I explain everything in plain English, and I never sell anything they don't need.</p>
+      <ul>
+        {% if site.dbs %}<li><strong>{{ site.dbs }}</strong>, so you can be confident about who's visiting your parent's home</li>{% endif %}
+        <li>I only access their devices with their permission, and they can watch everything I do</li>
+        <li>I'll never call out of the blue asking for remote access, so they always know a call like that isn't me</li>
+        <li>I respect their privacy: updates to you only include what they agree to share</li>
+        <li>If they'd rather you were involved, I'm happy to have you on speakerphone or video</li>
+      </ul>
+    </div>
+    <aside class="info-card">
+      <h2 class="h3">Popular things families ask me for</h2>
+      <ul class="ticks">
+        <li>Video calls with the grandchildren</li>
+        <li>Setting up a new phone, tablet or laptop</li>
+        <li>NHS App and repeat prescriptions</li>
+        <li>Safe online banking and shopping</li>
+        <li>Shared family photo albums</li>
+        <li>Checking alarms and phones after the landline switch</li>
+        <li>Large text and easier settings for weaker eyesight</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+{% set faqs = [
+  { q: "Can I pay for it if they live in your area but I don't?", a: "Yes. Many of the families I help live elsewhere in the UK. You book and pay, and I deal with your parent locally. If they're outside my area, remote help works anywhere." },
+  { q: "Will you tell my parent I've arranged it?", a: "I'd always recommend you mention it first, so a call from me isn't a surprise. I'll introduce myself clearly and they can ring you to check." },
+  { q: "What's in the update you send me?", a: "A short, plain-English note: what I helped with, anything I'd suggest, and anything to keep an eye on. I only share it if your parent agrees." },
+  { q: "Is the monthly plan a contract?", a: "No long contract. It rolls on month to month and you can cancel with " + prices.plans.monthly.notice + "." },
+  { q: "What if they need more than quick remote help?", a: "On the plan, home visits cost " + (prices.plans.monthly.memberHourly | gbp) + " an hour instead of " + (prices.hourly | gbp) + ". I'll always agree it with you, or with them, first." },
+  { q: "Can I give it as a gift?", a: "Yes. A welcome visit or a few months of the plan makes a thoughtful birthday or Christmas present, especially alongside a new device. Get in touch and I'll arrange it." }
+] %}
+{% include "partials/faqs.njk" %}
+{% include "partials/family-form.njk" %}

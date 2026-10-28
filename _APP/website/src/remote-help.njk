@@ -1,0 +1,67 @@
+---
+layout: layouts/base.njk
+permalink: /remote-help/
+title: Remote computer help anywhere in the UK
+description: Fast remote computer support using Splashtop SOS or TeamViewer QuickSupport. From £25 for 30 minutes. Based in Eastbourne, helping anywhere in the UK.
+---
+{%- set formProblem = "Remote help" %}
+<section class="hero hero-service">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Remote help</p>
+      <h1>Fixed over the internet. <span class="line2">No kettle required.</span></h1>
+      <p class="lede">Loads of problems don't need me on your doorstep. With your permission, I connect to your screen, fix it while you watch (it's a bit like magic, only less beardy) and explain what I did. Works anywhere in the UK.</p>
+      <div class="btn-row">
+        <a href="tel:{{ site.phoneLink }}" class="btn btn-primary">Call {{ site.phone }} first</a>
+        <a href="#download" class="btn btn-accent">Download the app</a>
+      </div>
+      <ul class="chips"><li>{{ prices.remote30 | gbp }} for up to 30 mins</li><li>{{ prices.remote60 | gbp }} for up to an hour</li><li>You can end the session at any time</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">How it works</p>
+    <h2>Easy as one, two, three</h2>
+    <ol class="steps">
+      <li><span class="step-num">1</span><h3>Ring me first</h3><p>Call or WhatsApp {{ site.phone }} so I know it's you and can agree a time and price.</p></li>
+      <li><span class="step-num">2</span><h3>Open the app</h3><p>Download one of the apps below and open it. It will show a short code on screen.</p></li>
+      <li><span class="step-num">3</span><h3>Read me the code</h3><p>Once you accept, I can see your screen and get to work. Close the app and I'm disconnected.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-tint" id="download" aria-labelledby="download-heading">
+  <div class="container">
+    <h2 id="download-heading">Grab the remote help app</h2>
+    <p class="section-lede">Use Splashtop SOS unless I ask you to use TeamViewer. Nothing is installed permanently, and nobody can connect without a code you give them.</p>
+    {%- for tool in remote.tools %}
+    <div class="tool-card{% if tool.primary %} primary{% endif %}">
+      <h3>{{ tool.name }}{% if tool.primary %} <span class="small">(recommended)</span>{% endif %}</h3>
+      <p>{{ tool.summary }}</p>
+      <div class="platforms">
+        {%- for p in tool.platforms %}
+        <div class="platform">
+          <strong>{{ p.label }}</strong>
+          {% if p.url %}<a href="{{ p.url }}" rel="noopener" target="_blank">Download for {{ p.label }}</a>{% else %}<span>{{ p.hint }}</span>{% endif %}
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+    <div class="callout callout-urgent">
+      <h2 class="h3">Stay safe: only share a code with someone you called</h2>
+      <p>Never read a remote access code to anyone who phoned, emailed or messaged you out of the blue, even if they say they're from your bank, Microsoft, BT or me. I will never contact you unexpectedly asking to connect. If in doubt, hang up and call {{ site.phone }}.</p>
+      <p><a href="/been-scammed/">What to do if you think you've been scammed</a></p>
+    </div>
+  </div>
+</section>
+
+{% include "partials/pricing.njk" %}
+{% include "partials/booking.njk" %}

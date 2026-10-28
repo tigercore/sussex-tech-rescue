@@ -1,0 +1,29 @@
+{
+  "_note": "Swap these for your own branded Splashtop SOS link once your account is set up. Check each link before going live.",
+  "tools": [
+    {
+      "name": "Splashtop SOS",
+      "primary": true,
+      "summary": "My trusty main tool. Open it, read me the 9-digit code, and once you say yes, I can see your screen.",
+      "page": "https://www.splashtop.com/sos",
+      "platforms": [
+        { "label": "Windows", "url": "https://www.splashtop.com/sos" },
+        { "label": "Mac", "url": "https://www.splashtop.com/sos" },
+        { "label": "iPhone or iPad", "hint": "Search the App Store for \"Splashtop SOS\"" },
+        { "label": "Android", "hint": "Search Google Play for \"Splashtop SOS\"" }
+      ]
+    },
+    {
+      "name": "TeamViewer QuickSupport",
+      "primary": false,
+      "summary": "The trusty sidekick. Open it and read me your ID and the password it shows.",
+      "page": "https://www.teamviewer.com/en/download/",
+      "platforms": [
+        { "label": "Windows", "url": "https://www.teamviewer.com/en/download/windows/" },
+        { "label": "Mac", "url": "https://www.teamviewer.com/en/download/macos/" },
+        { "label": "iPhone or iPad", "hint": "Search the App Store for \"TeamViewer QuickSupport\"" },
+        { "label": "Android", "hint": "Search Google Play for \"TeamViewer QuickSupport\"" }
+      ]
+    }
+  ]
+}

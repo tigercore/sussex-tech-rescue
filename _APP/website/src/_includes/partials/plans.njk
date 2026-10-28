@@ -1,0 +1,38 @@
+{%- set m = prices.plans.monthly %}
+<section class="section section-sand" id="plans" aria-labelledby="plans-heading">
+  <div class="container">
+    <p class="eyebrow">Choose the help that suits</p>
+    <h2 id="plans-heading">A quick fix, or Ryan on speed dial?</h2>
+    <p class="section-lede">Sort out a single problem, or give your parent someone to call whenever they need it. You can book and pay on their behalf.</p>
+    <div class="price-grid price-grid-2">
+      <div class="price-card">
+        <h3>{{ prices.plans.oneOff.name }}</h3>
+        <p class="price">{{ prices.hourly | gbp }}<span> an hour</span></p>
+        <p>{{ prices.plans.oneOff.summary }} {{ prices.diagnosis }}, and {{ prices.noFixNoFee | lower }}. Or choose remote help from {{ prices.remote30 | gbp }}.</p>
+        <p class="small">Best for: a new phone or tablet to set up, a computer that's playing up, or a one-off scam worry.</p>
+        <ul class="ticks">
+          <li>Help at their home, or remotely</li>
+          <li>A short summary sent to you afterwards, if they're happy for me to</li>
+          <li>Pay on the day, or pay for them in advance</li>
+        </ul>
+        <a href="#family-book" class="btn btn-outline" data-plan="One-off help">Book one-off help</a>
+      </div>
+      <div class="price-card price-card-featured">
+        <p class="badge">Most popular with families</p>
+        <h3>{{ m.name }}</h3>
+        <p class="price">{{ m.price | gbp }}<span>/month</span></p>
+        <p>Or {{ m.couplePrice | gbp }}/month to cover two people in the same home. Cancel with {{ m.notice }}.</p>
+        <p class="small">Best for: parents who'd like a regular, trusted person to ask, without ringing you every time.</p>
+        <ul class="ticks">
+          <li>A {{ m.welcomeMinutes }}-minute welcome visit at home to set everything up</li>
+          <li>Unlimited quick remote help, up to 30 minutes at a time</li>
+          <li>A friendly check-in call every month</li>
+          <li>Home visits at {{ m.memberHourly | gbp }} an hour instead of {{ prices.hourly | gbp }}</li>
+          <li>Scam worries checked the same day</li>
+          <li>An update for you after each session, if they agree</li>
+        </ul>
+        <a href="#family-book" class="btn btn-accent" data-plan="{{ m.name }}">Start the plan</a>
+      </div>
+    </div>
+  </div>
+</section>

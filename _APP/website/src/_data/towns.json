@@ -1,0 +1,228 @@
+[
+  {
+    "slug": "eastbourne",
+    "name": "Eastbourne",
+    "postcodes": "BN20, BN21, BN22, BN23",
+    "travel": "My home patch, so visits are often same day",
+    "areas": [
+      "Old Town",
+      "Meads",
+      "Upperton",
+      "Hampden Park",
+      "Langney",
+      "Sovereign Harbour",
+      "Roselands",
+      "Ratton",
+      "Summerdown"
+    ],
+    "intro": "Eastbourne is home. I grew up here, spent 13 years working in tech in London, and came back. So whether you're in Meads, Old Town, Hampden Park or down by Sovereign Harbour, I'm usually only a few minutes away. I'll come to you and sort things out at your kitchen table.",
+    "local": "Lots of my Eastbourne customers are retired and just want someone patient who'll explain things properly, without making them feel silly. I also help local shops, guest houses and holiday lets keep their Wi-Fi and card machines working through the busy summer.",
+    "nearby": [
+      "willingdon",
+      "polegate",
+      "pevensey",
+      "westham"
+    ],
+    "lat": 50.7684,
+    "lng": 0.2797
+  },
+  {
+    "slug": "bexhill",
+    "name": "Bexhill-on-Sea",
+    "postcodes": "TN39, TN40",
+    "travel": "Around 25 minutes from base",
+    "areas": [
+      "Town centre",
+      "Old Town",
+      "Little Common",
+      "Cooden",
+      "Sidley",
+      "Collington",
+      "Pebsham"
+    ],
+    "intro": "Bexhill has a reputation as one of the calmer corners of the coast, and that's exactly how I like to work: no rush, no jargon. From the town centre near the De La Warr Pavilion out to Cooden and Little Common, I visit homes and businesses for everything from slow computers to new phone set-ups.",
+    "local": "Plenty of my Bexhill customers have family who live further away, so I often set up video calling, shared photo albums and simple backups that help everyone stay in touch. I'm also happy to work with a relative over the phone so they know exactly what's been done.",
+    "nearby": [
+      "st-leonards",
+      "hastings",
+      "pevensey",
+      "hailsham"
+    ],
+    "lat": 50.8424,
+    "lng": 0.4676
+  },
+  {
+    "slug": "hastings",
+    "name": "Hastings",
+    "postcodes": "TN34, TN35",
+    "travel": "Around 35 minutes from base",
+    "areas": [
+      "Old Town",
+      "Town centre",
+      "Ore",
+      "Clive Vale",
+      "Silverhill",
+      "Hollington",
+      "Fairlight"
+    ],
+    "intro": "Hastings has some of the most characterful homes on the coast, and also some of the hardest to get good Wi-Fi in. Steep streets, thick old walls and split-level houses in the Old Town and up towards Ore all play havoc with signals. I visit across Hastings to sort connections, computers and everything in between.",
+    "local": "The town is full of creative freelancers, makers and independent shops, so I spend a lot of time helping people get a website that works, a reliable backup for their work and a Google Business Profile that brings customers through the door.",
+    "nearby": [
+      "st-leonards",
+      "bexhill"
+    ],
+    "lat": 50.8552,
+    "lng": 0.573
+  },
+  {
+    "slug": "st-leonards",
+    "name": "St Leonards-on-Sea",
+    "postcodes": "TN37, TN38",
+    "travel": "Around 30 minutes from base",
+    "areas": [
+      "Warrior Square",
+      "Bohemia",
+      "Silverhill",
+      "West St Leonards",
+      "Hollington",
+      "Filsham"
+    ],
+    "intro": "From the grand terraces around Warrior Square to family homes in West St Leonards, I come out to fix the tech that's getting in the way. Converted flats here often have the router in one room and the person who needs Wi-Fi in another, which is one of my favourite problems to solve.",
+    "local": "I help people working from home, students and retired residents alike. If you'd rather have a quick fix without a visit, remote help is often the fastest way to get sorted, and I can usually connect the same day.",
+    "nearby": [
+      "hastings",
+      "bexhill"
+    ],
+    "lat": 50.854,
+    "lng": 0.547
+  },
+  {
+    "slug": "polegate",
+    "name": "Polegate",
+    "postcodes": "BN26",
+    "travel": "Around 10 minutes from base",
+    "areas": [
+      "Polegate",
+      "Wannock",
+      "Lower Willingdon",
+      "Folkington"
+    ],
+    "intro": "Polegate sits just up the road from me, so getting to you is quick and easy. Whether you're near the station or out towards Wannock, I visit for new laptop set-ups, troublesome printers, Wi-Fi black spots and anything else that's stopped working.",
+    "local": "With so many new homes built around Polegate in recent years, I often help people get their broadband, mesh Wi-Fi, smart heating and video doorbells set up properly from day one, rather than living with whatever the installer left behind.",
+    "nearby": [
+      "willingdon",
+      "eastbourne",
+      "hailsham",
+      "westham"
+    ],
+    "lat": 50.8213,
+    "lng": 0.2453
+  },
+  {
+    "slug": "hailsham",
+    "name": "Hailsham",
+    "postcodes": "BN27",
+    "travel": "Around 20 minutes from base",
+    "areas": [
+      "Town centre",
+      "Hailsham East",
+      "Hellingly",
+      "Lower Dicker",
+      "Herstmonceux",
+      "Magham Down"
+    ],
+    "intro": "Hailsham and the surrounding villages are a big part of my patch. I visit homes in town and out in the countryside around Hellingly and Herstmonceux, where rural broadband can be a real headache, to get everything connected and working as it should.",
+    "local": "Farms, small workshops and home businesses around Hailsham often need tech that just works without a big IT contract. I offer straightforward pay-as-you-go help, from email and backups to getting the Wi-Fi out to the office in the garden.",
+    "nearby": [
+      "polegate",
+      "westham",
+      "pevensey"
+    ],
+    "lat": 50.8625,
+    "lng": 0.2585
+  },
+  {
+    "slug": "pevensey",
+    "name": "Pevensey and Pevensey Bay",
+    "postcodes": "BN24",
+    "travel": "Around 15 minutes from base",
+    "areas": [
+      "Pevensey",
+      "Pevensey Bay",
+      "Normans Bay",
+      "Beachlands"
+    ],
+    "intro": "From the village around the castle to the bungalows along the bay, I visit Pevensey homes for all kinds of tech trouble. Seaside properties can be tough on signals, so if your Wi-Fi gives up the moment you step into the conservatory, I can fix that.",
+    "local": "I help many retired residents and holiday-let owners here. For lets, I set up reliable guest Wi-Fi, smart locks and simple TV systems so visitors aren't ringing you about the remote at nine at night.",
+    "nearby": [
+      "westham",
+      "eastbourne",
+      "bexhill"
+    ],
+    "lat": 50.8183,
+    "lng": 0.338
+  },
+  {
+    "slug": "westham",
+    "name": "Westham and Stone Cross",
+    "postcodes": "BN24",
+    "travel": "Around 15 minutes from base",
+    "areas": [
+      "Westham",
+      "Stone Cross",
+      "Hankham"
+    ],
+    "intro": "Westham and Stone Cross are just a short drive away, and I'm regularly out there sorting slow laptops, setting up new tablets and fixing printers that have decided to go offline for no reason at all.",
+    "local": "Lots of families here juggle school laptops, games consoles and work-from-home set-ups on one connection. I help get parental controls, Wi-Fi and backups sorted so the whole household runs smoothly.",
+    "nearby": [
+      "pevensey",
+      "polegate",
+      "hailsham",
+      "eastbourne"
+    ],
+    "lat": 50.818,
+    "lng": 0.326
+  },
+  {
+    "slug": "willingdon",
+    "name": "Willingdon",
+    "postcodes": "BN20, BN22",
+    "travel": "Around 10 minutes from base",
+    "areas": [
+      "Willingdon village",
+      "Lower Willingdon",
+      "Ratton",
+      "Wish Hill"
+    ],
+    "intro": "Willingdon is right on my doorstep, nestled under the Downs on the edge of Eastbourne. I visit homes across the village and Lower Willingdon for everything from virus clean-ups to helping you get to grips with a new iPad.",
+    "local": "Many of my Willingdon customers simply want a friendly, trustworthy person they can call whenever something goes wrong. That's what I aim to be: the same face each time, with clear prices and no pressure to buy anything.",
+    "nearby": [
+      "eastbourne",
+      "polegate",
+      "westham"
+    ],
+    "lat": 50.796,
+    "lng": 0.251
+  },
+  {
+    "slug": "seaford",
+    "name": "Seaford",
+    "postcodes": "BN25",
+    "travel": "Around 25 minutes from base",
+    "areas": [
+      "Town centre",
+      "Bishopstone",
+      "East Blatchington",
+      "Chyngton",
+      "Sutton"
+    ],
+    "intro": "Over the Downs from Eastbourne, Seaford is a quiet, friendly town where a good number of residents are retired, and plenty would rather have someone sit with them than wrestle with a helpline. I visit homes across Seaford to fix, set up and explain.",
+    "local": "Online banking safety, scam calls and keeping in touch with family on video calls are the things I'm asked about most here. I take the time to make sure you're confident before I leave, and I'm only ever a phone call away afterwards.",
+    "nearby": [
+      "eastbourne",
+      "willingdon"
+    ],
+    "lat": 50.772,
+    "lng": 0.102
+  }
+]

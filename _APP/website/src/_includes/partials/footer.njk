@@ -1,0 +1,39 @@
+<footer class="site-footer">
+  <div class="wave-divider" aria-hidden="true"></div>
+  <div class="container footer-grid">
+    <div>
+      <a href="/" class="brand brand-footer">{% include "partials/logo.njk" %}<span class="brand-name">{{ site.name }}</span></a>
+      <p>{{ site.tagline }}.{% if site.dbs %} {{ site.dbs }}.{% endif %}</p>
+      <p><a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a><br>
+      <a href="https://wa.me/{{ site.whatsapp }}">WhatsApp me</a><br>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+      {{ site.hours }}</p>
+    </div>
+    <div>
+      <h2 class="footer-heading">Services</h2>
+      <ul>
+        <li><a href="/#help">Home tech help</a></li>
+        {%- for s in services %}<li><a href="{{ s.url }}">{{ s.label }}</a></li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-heading">Areas I cover</h2>
+      <ul>
+        {%- for t in towns %}<li><a href="/computer-help-{{ t.slug }}/">{{ t.name }}</a></li>{% endfor %}
+        <li><a href="/areas/">All areas</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-heading">{{ site.name }}</h2>
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-base">
+    <p>&copy; {{ "" | year }} {{ site.name }}. Friendly tech help in {{ site.base }}, {{ site.county }}. Have you tried turning it off and on again?</p>
+  </div>
+</footer>

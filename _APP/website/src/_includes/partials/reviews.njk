@@ -1,0 +1,16 @@
+{%- if reviews.length %}
+<section class="section" aria-labelledby="reviews-heading">
+  <div class="container">
+    <p class="eyebrow">Kind words</p>
+    <h2 id="reviews-heading">What my customers say</h2>
+    <div class="card-grid">
+      {%- for r in reviews %}
+      <figure class="review-card">
+        <blockquote>{{ r.text }}</blockquote>
+        <figcaption>{{ r.name }}{% if r.town %}, {{ r.town }}{% endif %}</figcaption>
+      </figure>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}

@@ -1,0 +1,19 @@
+{
+  "_note": "Edit this file to change the business name, contact details and hours everywhere on the site.",
+  "name": "Sussex Tech Rescue",
+  "tagline": "Tech fixes, tips and banter for Eastbourne, Bexhill and the Sunshine Coast",
+  "url": "https://sussex-tech-rescue.netlify.app",
+  "owner": "Ryan",
+  "base": "Eastbourne",
+  "county": "East Sussex",
+  "phone": "07734 779429",
+  "phoneLink": "+447734779429",
+  "whatsapp": "447734779429",
+  "email": "hello@example.com",
+  "hours": "Mon to Sat, 9am to 6pm",
+  "hoursSchema": "Mo-Sa 09:00-18:00",
+  "replyPromise": "I aim to reply within a couple of hours during opening times.",
+  "payment": "Card, cash or bank transfer on the day. Invoices for businesses.",
+  "dbs": "Fully DBS checked",
+  "shortName": "Sussex"
+}

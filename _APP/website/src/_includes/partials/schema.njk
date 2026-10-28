@@ -1,0 +1,16 @@
+{%- set areaNames = [] %}{% for t in towns %}{% set areaNames = (areaNames.push(t.name), areaNames) %}{% endfor -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": {{ site.name | dump | safe }},
+  "description": {{ site.tagline | dump | safe }},
+  "url": {{ site.url | dump | safe }},
+  "telephone": {{ site.phoneLink | dump | safe }},
+  "email": {{ site.email | dump | safe }},
+  "openingHours": {{ site.hoursSchema | dump | safe }},
+  "priceRange": "££",
+  "address": { "@type": "PostalAddress", "addressLocality": {{ site.base | dump | safe }}, "addressRegion": {{ site.county | dump | safe }}, "addressCountry": "GB" },
+  "areaServed": {{ areaNames | dump | safe }}
+}
+</script>
