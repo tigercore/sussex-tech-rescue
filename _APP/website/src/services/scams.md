@@ -3,18 +3,18 @@ permalink: /been-scammed/
 title: Been scammed? What to do right now
 description: Clicked a scam link, let someone onto your computer or given out bank details? Urgent steps to take, and local help in Eastbourne and Bexhill to clean up your devices.
 eyebrow: Been scammed?
-heading: Think you've been scammed? Don't panic. I've got you.
-lede: It happens to careful, clever people every single day, because scammers are professionals. What matters is acting quickly, and you don't have to sort it out on your own. No telling off, I promise.
+heading: Think you've been scammed? I can help.
+lede: It happens to careful, clever people every single day, because scammers are professionals. What matters is acting quickly, and you don't have to sort it out on your own. There's no judgement here.
 formProblem: ""
 ctaLabel: Get urgent help
 showPricing: false
 chips: ["Calm, no-judgement help", "Same-day help where possible", "I'll never ring you out of the blue"]
-problemsHeading: The rogues' gallery
+problemsHeading: Common scams to watch for
 problems:
   - { icon: "phone-call", title: "The 'tech support' call", text: "Someone rings claiming to be Microsoft, BT or your bank, and asks you to install something so they can 'fix' your computer. Hang up. Every time." }
   - { icon: "message-circle", title: "The 'Hi Mum' message", text: "A text or WhatsApp from a new number claiming to be your child, who urgently needs money. Ring your child on their old number first." }
   - { icon: "package", title: "The parcel or bill text", text: "A missed delivery, an unpaid toll or an energy refund, with a link to a fake website. Don't click it." }
-  - { icon: "triangle-alert", title: "The screaming pop-up", text: "A loud warning saying your computer is infected and you must call a number. It's fake. All of it." }
+  - { icon: "triangle-alert", title: "The alarming pop-up", text: "A loud warning saying your computer is infected and you must call a number. It's fake." }
   - { icon: "landmark", title: "The 'safe account' call", text: "Your 'bank's fraud team' asks you to move money to keep it safe. Real banks never do this." }
   - { icon: "heart", title: "The too-good-to-be-true friend", text: "Someone lovely you've met online who, sooner or later, needs money for an emergency." }
 ---
@@ -32,8 +32,8 @@ problems:
 
 ## How I help after a scam
 
-- Find and boot out remote-access software or anything else the scammer installed
-- Check your email for sneaky rules or forwarding the scammer may have set up
+- Find and remove remote-access software or anything else the scammer installed
+- Check your email for hidden rules or forwarding the scammer may have set up
 - Lock down your accounts with new passwords and two-step sign-in
 - Explain what happened, without judgement, so you'll spot it next time
 - Talk it through with family members too, if that helps

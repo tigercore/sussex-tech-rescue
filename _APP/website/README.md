@@ -1,6 +1,6 @@
 # Sussex Tech Rescue website
 
-A loud alternative version of the Sunshine Coast Tech site. The extra styling lives in `src/assets/css/loud.css`.
+A calm, coastal version of the Sunshine Coast Tech site. Colours and fonts live in `src/assets/css/theme.css`; the finishing styles live in `src/assets/css/coastal.css`.
 
 Friendly tech help site for Eastbourne, Bexhill and the East Sussex coast. Built with [Eleventy](https://www.11ty.dev/) and hosted on Netlify.
 

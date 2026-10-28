@@ -9,8 +9,8 @@ description: Fast remote computer support using Splashtop SOS or TeamViewer Quic
   <div class="container hero-inner">
     <div class="hero-copy">
       <p class="eyebrow">Remote help</p>
-      <h1>Fixed over the internet. <span class="line2">No kettle required.</span></h1>
-      <p class="lede">Loads of problems don't need me on your doorstep. With your permission, I connect to your screen, fix it while you watch (it's a bit like magic, only less beardy) and explain what I did. Works anywhere in the UK.</p>
+      <h1>Fixed over the internet. <span class="line2">No visit needed.</span></h1>
+      <p class="lede">Many problems don't need a home visit. With your permission, I connect to your screen, fix the problem while you watch and explain what I did. Works anywhere in the UK.</p>
       <div class="btn-row">
         <a href="tel:{{ site.phoneLink }}" class="btn btn-primary">Call {{ site.phone }} first</a>
         <a href="#download" class="btn btn-accent">Download the app</a>
@@ -23,7 +23,7 @@ description: Fast remote computer support using Splashtop SOS or TeamViewer Quic
 <section class="section">
   <div class="container">
     <p class="eyebrow">How it works</p>
-    <h2>Easy as one, two, three</h2>
+    <h2>Three simple steps</h2>
     <ol class="steps">
       <li><span class="step-num">1</span><h3>Ring me first</h3><p>Call or WhatsApp {{ site.phone }} so I know it's you and can agree a time and price.</p></li>
       <li><span class="step-num">2</span><h3>Open the app</h3><p>Download one of the apps below and open it. It will show a short code on screen.</p></li>
@@ -34,7 +34,7 @@ description: Fast remote computer support using Splashtop SOS or TeamViewer Quic
 
 <section class="section section-tint" id="download" aria-labelledby="download-heading">
   <div class="container">
-    <h2 id="download-heading">Grab the remote help app</h2>
+    <h2 id="download-heading">Download the remote help app</h2>
     <p class="section-lede">Use Splashtop SOS unless I ask you to use TeamViewer. Nothing is installed permanently, and nobody can connect without a code you give them.</p>
     {%- for tool in remote.tools %}
     <div class="tool-card{% if tool.primary %} primary{% endif %}">

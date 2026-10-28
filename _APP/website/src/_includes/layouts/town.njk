@@ -22,7 +22,7 @@ layout: layouts/base.njk
     <div class="prose">
       <h2>Your local tech rescue</h2>
       <p>{{ town.local }}</p>
-      <p>Every visit starts with a chat about what's wrong. I'll tell you the likely cost before I begin, and if it's something you can fix yourself next time, I'll show you how. Teach a person to reboot, and all that.</p>
+      <p>Every visit starts with a chat about what's wrong. I'll tell you the likely cost before I begin, and if it's something you can fix yourself next time, I'll show you how.</p>
     </div>
     <aside class="info-card">
       <h2 class="h3">Areas I visit</h2>
@@ -49,7 +49,7 @@ layout: layouts/base.njk
 
 <section class="section" aria-labelledby="nearby-heading">
   <div class="container">
-    <h2 id="nearby-heading">I also pop up in</h2>
+    <h2 id="nearby-heading">Nearby areas I cover</h2>
     <ul class="pill-links">
       {%- for slug in town.nearby %}{% set n = towns | findBySlug(slug) %}{% if n %}<li><a href="/computer-help-{{ n.slug }}/">{{ n.name }}</a></li>{% endif %}{% endfor %}
       <li><a href="/areas/">See all areas</a></li>

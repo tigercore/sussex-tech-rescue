@@ -1,21 +1,9 @@
 <section class="section section-sand" id="pricing" aria-labelledby="pricing-heading">
   <div class="container">
     <p class="eyebrow">Prices</p>
-    <h2 id="pricing-heading">What's the damage?</h2>
+    <h2 id="pricing-heading">Clear, simple prices</h2>
     <p class="section-lede">I'll always tell you the price before I start. No contracts, nothing to sign, no nasty surprises.</p>
     <div class="price-grid">
-      <div class="price-card price-card-featured">
-        <h3>Home visits</h3>
-        <p class="price">{{ prices.hourly | gbp }}<span> an hour</span></p>
-        <p>Charged per 30 minutes (£{{ prices.halfHour }} a go), so a quick job costs a quick price. No hidden extras, no rounding up to the nearest yacht.</p>
-        <ul class="ticks">
-          <li>{{ prices.billing }}</li>
-          <li>{{ prices.travel }}</li>
-          <li>I explain everything as I go</li>
-          <li>Notes left behind if you'd like them</li>
-        </ul>
-        <a href="/contact/#book" class="btn btn-accent">Book a visit</a>
-      </div>
       <div class="price-card">
         <h3>{{ prices.diagnosis }}</h3>
         <p class="price">£0<span> to find out what's wrong</span></p>
@@ -25,10 +13,22 @@
           <li>Price agreed before I start</li>
         </ul>
       </div>
+      <div class="price-card price-card-featured">
+        <h3>Home visits</h3>
+        <p class="price">{{ prices.hourly | gbp }}<span> an hour</span></p>
+        <p>Charged per 30 minutes (£{{ prices.halfHour }} a go), so a quick job costs a quick price. No hidden extras.</p>
+        <ul class="ticks">
+          <li>{{ prices.billing }}</li>
+          <li>{{ prices.travel }}</li>
+          <li>I explain everything as I go</li>
+          <li>Notes left behind if you'd like them</li>
+        </ul>
+        <a href="/contact/#book" class="btn btn-accent">Book a visit</a>
+      </div>
       <div class="price-card">
         <h3>Help over the internet</h3>
         <p class="price">{{ prices.remote30 | gbp }}<span> for 30 mins</span></p>
-        <p>Or {{ prices.remote60 | gbp }} for up to an hour. With your say-so, I can see your screen from here and fix things while you watch. Spooky, but handy.</p>
+        <p>Or {{ prices.remote60 | gbp }} for up to an hour. With your say-so, I can see your screen from here and fix things while you watch.</p>
         <ul class="ticks">
           <li>Often the same day</li>
           <li>Handy if you're not local</li>

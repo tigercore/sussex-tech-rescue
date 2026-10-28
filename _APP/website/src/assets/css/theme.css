@@ -1,51 +1,52 @@
 /* =========================================================
    SUSSEX TECH RESCUE THEME
-   Loud, cheerful and proud of it. Every colour and font on
-   the site comes from these variables.
+   Calm and coastal: deep sea navy, sea-glass teal and soft
+   sand. Every colour and font on the site comes from these
+   variables.
    ========================================================= */
 @font-face { font-family: "Atkinson Hyperlegible"; src: url("/assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Atkinson Hyperlegible"; src: url("/assets/fonts/atkinson-hyperlegible-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: "Caveat"; src: url("/assets/fonts/caveat-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
 @font-face { font-family: "Atkinson Hyperlegible"; src: url("/assets/fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: "Bangers"; src: url("/assets/fonts/bangers-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: "Source Serif 4"; src: url("/assets/fonts/source-serif-4-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Serif 4"; src: url("/assets/fonts/source-serif-4-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
 
 :root {
   /* Brand colours */
-  --color-primary: #111111;        /* ink black: headings, outlines, footer */
+  --color-primary: #12344d;        /* deep sea navy: headings, footer */
   --color-primary-ink: #ffffff;
-  --color-secondary: #1747d1;      /* electric blue: links, banners (7.3:1 with white) */
-  --color-surf: #6fb6ff;
-  --color-sun: #ffe03a;            /* highlighter yellow */
-  --color-accent: #ffe03a;         /* main buttons */
-  --color-accent-hover: #ffd000;
-  --color-accent-ink: #111111;
-  --color-hot: #d1105a;            /* hot pink stickers (5.4:1 with white) */
-  --color-whatsapp: #0f7a3d;       /* 5.4:1 with white */
-  --color-yes: #0f7a3d;
-  --color-no: #e0311f;
+  --color-secondary: #1f6577;      /* harbour teal: links, icons (6.6:1 with white) */
+  --color-surf: #9cc7cf;           /* pale surf */
+  --color-sun: #e7d8b9;            /* dry sand highlight */
+  --color-accent: #1f6577;         /* main buttons */
+  --color-accent-hover: #174f5d;
+  --color-accent-ink: #ffffff;
+  --color-hot: #a8513a;            /* weathered brick, used sparingly (5.6:1 with white) */
+  --color-whatsapp: #1c6b45;       /* 6.3:1 with white */
+  --color-yes: #2b6e4f;
+  --color-no: #a8513a;
 
   /* Surfaces */
-  --color-bg: #fffdf2;
+  --color-bg: #fbfaf7;             /* sea-salt white */
   --color-surface: #ffffff;
-  --color-sand: #fff4b8;           /* pale yellow sections */
-  --color-tint: #e3ecff;           /* pale blue sections */
-  --color-sun-soft: #fff4b8;
-  --color-border: #111111;
+  --color-sand: #f4efe5;           /* soft sand sections */
+  --color-tint: #eaf2f3;           /* sea-mist sections */
+  --color-sun-soft: #f4efe5;
+  --color-border: #d5dee1;
 
   /* Text */
-  --color-text: #161616;
-  --color-muted: #3d3d3d;
+  --color-text: #1e2a31;
+  --color-muted: #4b5b64;
 
   /* Type */
   --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --font-heading: "Bangers", "Impact", "Arial Black", system-ui, sans-serif;
-  --font-hand: "Caveat", "Bradley Hand", "Segoe Print", cursive;
-  --font-size-base: 1.15rem;
+  --font-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-hand: "Source Serif 4", Georgia, serif;   /* used in italic for quotes and sign-offs */
+  --font-size-base: 1.125rem;
 
   /* Shape */
-  --radius: 14px;
-  --radius-small: 10px;
-  --shadow: 6px 6px 0 #111111;     /* hard comic-book shadow */
-  --outline: 3px solid #111111;
+  --radius: 10px;
+  --radius-small: 6px;
+  --shadow: 0 4px 18px rgba(18, 52, 77, .08);
+  --outline: 1px solid var(--color-border);
   --container: 1180px;
 }

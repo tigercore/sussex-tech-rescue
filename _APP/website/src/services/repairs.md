@@ -3,14 +3,14 @@ permalink: /computer-repairs-upgrades/
 title: Computer and laptop repairs and upgrades in Eastbourne and Bexhill
 description: Laptop and computer repairs, virus removal, tune-ups, upgrades and new device set-up in Eastbourne, Bexhill and East Sussex. Free diagnosis, no fix no fee.
 eyebrow: Repairs and upgrades
-heading: Broken, slow or just plain sulking? I'll fix it.
-lede: Cracked screens, cups of tea in the keyboard, viruses, and computers that take longer to start than the kettle takes to boil. I'll find out what's wrong for free, then tell you what it'll cost to fix.
+heading: Computer repairs and upgrades
+lede: Cracked screens, spilt drinks, viruses and computers that take too long to start. I'll find out what's wrong for free, then tell you what it'll cost to fix.
 formProblem: Repairs and upgrades
 chips: ["Free diagnosis", "No fix, no fee", "Parts quoted first"]
 problemsHeading: What I fix and upgrade
 problems:
-  - { icon: "gauge", title: "Slow computer tune-ups", text: "I clear out the junk, stop the pointless stuff starting up and get it running like it used to." }
-  - { icon: "shield-alert", title: "Virus and nasties removal", text: "Viruses, spyware, adware and dodgy pop-ups, found and booted out, then I make sure they stay out." }
+  - { icon: "gauge", title: "Slow computer tune-ups", text: "I clear out unnecessary files, stop unneeded programs starting up and get it running like it used to." }
+  - { icon: "shield-alert", title: "Virus and malware removal", text: "Viruses, spyware, adware and suspicious pop-ups, found and removed, then I make sure they stay out." }
   - { icon: "wrench", title: "Accidental damage", text: "Cracked screens, spilt drinks and other knocks. I'll tell you honestly if it's worth fixing." }
   - { icon: "circle-arrow-up", title: "Upgrades", text: "A faster drive, more memory or a new graphics card can make an old machine feel brand new, for a lot less than replacing it." }
   - { icon: "refresh-cw", title: "Fresh start", text: "A clean reinstall when a computer's beyond tidying, with your files backed up first and put back after." }

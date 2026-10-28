@@ -4,28 +4,28 @@
     "label": "Help for your parents",
     "url": "/help-for-your-parents/",
     "icon": "users",
-    "blurb": "Fed up being the family IT department? I'll be the one Mum or Dad calls, and I'll tell you how it went."
+    "blurb": "Arrange trusted help for Mum or Dad, with an update sent to you after each visit."
   },
   {
     "slug": "own-pace",
     "label": "Tech help at your own pace",
     "url": "/tech-help-at-your-own-pace/",
     "icon": "heart-handshake",
-    "blurb": "No silly questions, only silly computers. Patient help, never rushed."
+    "blurb": "Patient, unhurried help in plain English, whatever your experience."
   },
   {
     "slug": "lessons",
     "label": "Tech lessons",
     "url": "/tech-lessons/",
     "icon": "lightbulb",
-    "blurb": "One-to-one lessons at your kitchen table. Phones, computers, eBay, the lot. No homework."
+    "blurb": "One-to-one lessons at your kitchen table. Phones, computers, online selling and more."
   },
   {
     "slug": "business",
     "label": "Small business IT",
     "url": "/business-it-support/",
     "icon": "briefcase",
-    "blurb": "Your IT department, minus the department. Pay when you need me, no contracts."
+    "blurb": "Pay-as-you-go IT support for small businesses, with no contracts."
   },
   {
     "slug": "web",
@@ -39,7 +39,7 @@
     "label": "Been scammed?",
     "url": "/been-scammed/",
     "icon": "shield-alert",
-    "blurb": "Clicked a dodgy link or let someone on your computer? Don't panic. Start here."
+    "blurb": "Clicked a suspicious link or let someone onto your computer? Start here."
   },
   {
     "slug": "repairs",
@@ -53,41 +53,41 @@
     "label": "Data recovery",
     "url": "/data-recovery/",
     "icon": "hard-drive",
-    "blurb": "Lost photos or files? Stop, don't panic, ring me. They're often still there."
+    "blurb": "Lost photos or files? Stop using the device and call me. They can often be recovered."
   },
   {
     "slug": "m365",
     "label": "Microsoft 365 and Google",
     "url": "/microsoft-365-google-help/",
     "icon": "cloud",
-    "blurb": "Outlook or Gmail sulking? OneDrive or Google Drive 'full'? Sorted, minus the head-scratching."
+    "blurb": "Help with Outlook, Gmail, OneDrive and Google Drive, at home or at work."
   },
   {
     "slug": "smart-home",
     "label": "Smart home help",
     "url": "/smart-home-help/",
     "icon": "house",
-    "blurb": "Doorbells, Alexa, cameras and heating that actually do what they're told."
+    "blurb": "Video doorbells, smart speakers, cameras and heating, set up properly."
   },
   {
     "slug": "wifi",
     "label": "Wi-Fi installation",
     "url": "/wifi-installation/",
     "icon": "router",
-    "blurb": "Wi-Fi in every room. Yes, even the loo. And the garden office."
+    "blurb": "Reliable Wi-Fi in every room, including the garden office."
   },
   {
     "slug": "pc-builds",
     "label": "Custom PC builds",
     "url": "/custom-pc-builds/",
     "icon": "gamepad-2",
-    "blurb": "A PC built for you, gaming or work, parts at cost. Extra fans, naturally."
+    "blurb": "A PC built for you, gaming or work, parts at cost."
   },
   {
     "slug": "remote",
     "label": "Remote help",
     "url": "/remote-help/",
     "icon": "monitor-smartphone",
-    "blurb": "I fix it over the internet while you watch. No kettle required."
+    "blurb": "I fix it over the internet while you watch."
   }
 ]

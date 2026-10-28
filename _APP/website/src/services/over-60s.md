@@ -3,19 +3,19 @@ permalink: /tech-help-at-your-own-pace/
 title: Patient computer and tech help at your own pace in Eastbourne and Bexhill
 description: Patient, friendly computer, tablet and phone help in Eastbourne, Bexhill and East Sussex. Ideal if you are new to tech or feel left behind. At your own pace, in plain English.
 eyebrow: Tech help at your own pace
-heading: No silly questions. Only silly computers.
-lede: '"I don''t know anything about computers" is the thing I hear most, and that''s absolutely fine. I''ll pop round, sort out what''s wrong and make sure you''re happy before I leave. Biscuits optional.'
+heading: Patient tech help, at your own pace
+lede: '"I don''t know anything about computers" is the thing I hear most, and that''s absolutely fine. I''ll visit you, sort out what''s wrong and make sure you''re happy before I leave.'
 formProblem: Tech help at your own pace
 showDbs: true
 chips: ["Never rushed", "Written notes left behind", "Family kept in the loop if you like"]
 problemsHeading: Whatever it is, I've seen it before
 problems:
-  - { icon: "smartphone", title: "A shiny new phone or tablet", text: "Still in the box? I'll set it up, move your contacts and photos across, and show you just the bits you'll actually use." }
-  - { icon: "mail", title: "Email and messages", text: "Can't find an email, can't send a photo, or the password has gone walkabout? I'll sort it." }
-  - { icon: "video", title: "Video calls with the family", text: "FaceTime, WhatsApp or Zoom set up so you can see the grandchildren with one tap. Their whole face, not just their ear." }
-  - { icon: "landmark", title: "Online banking and shopping", text: "I'll help you get started safely, and show you how to spot a dodgy website or message a mile off." }
+  - { icon: "smartphone", title: "A new phone or tablet", text: "Still in the box? I'll set it up, move your contacts and photos across, and show you just the bits you'll actually use." }
+  - { icon: "mail", title: "Email and messages", text: "Can't find an email, can't send a photo, or forgotten a password? I'll sort it." }
+  - { icon: "video", title: "Video calls with the family", text: "FaceTime, WhatsApp or Zoom set up so you can see the grandchildren with one tap." }
+  - { icon: "landmark", title: "Online banking and shopping", text: "I'll help you get started safely, and show you how to spot a suspicious website or message." }
   - { icon: "phone-call", title: "The digital landline switch", text: "Landlines are moving onto the internet. I'll check your phone, alarm or care pendant keeps working." }
-  - { icon: "tv", title: "The TV and its million remotes", text: "Missing channels, catch-up TV that won't load, and a coffee table full of remotes. Simple fix, clearly explained." }
+  - { icon: "tv", title: "The TV and its remotes", text: "Missing channels, catch-up TV that won't load, and too many remotes. Simple fixes, clearly explained." }
 faqs:
   - q: "Will you make me feel silly for asking?"
     a: "Never. Everyone starts somewhere, and honestly, most of this stuff is more confusing than it needs to be. I'll explain things as many times as you like."
@@ -32,9 +32,9 @@ faqs:
 ---
 ## Help that fits around you
 
-Loads of people tell me they feel left behind by technology, or that they hate asking the family for help again. Fair enough. That's what I'm here for. I go at your pace, explain things in everyday language and check you're happy before moving on.
+Many people tell me they feel left behind by technology, or that they hate asking the family for help again. That's what I'm here for. I go at your pace, explain things in everyday language and check you're happy before moving on.
 
-- **Time for a natter.** Visits aren't rushed, and questions are always welcome.
+- **Time to talk.** Visits aren't rushed, and questions are always welcome.
 - **Show, don't tell.** I'll walk you through it on your own device, so it actually sticks.
 - **Staying safe.** I'll show you how to spot scam emails, texts and phone calls.
 - **Someone to ring.** Once we've met, you've got a friendly local face to call next time.

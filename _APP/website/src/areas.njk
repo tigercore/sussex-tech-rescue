@@ -7,14 +7,14 @@ description: I visit homes and businesses across Eastbourne, Bexhill, Hastings, 
 <section class="page-hero">
   <div class="container narrow">
     <p class="eyebrow">Areas I cover</p>
-    <h1>Coming to a kitchen table near you!</h1>
+    <h1>Areas I cover</h1>
     <p class="lede">I'm based in {{ site.base }} and visit homes and businesses across the surrounding towns and villages. {{ prices.travel }}</p>
   </div>
 </section>
 <section class="section section-tint" aria-labelledby="map-heading">
   <div class="container">
-    <h2 id="map-heading">Where I roam</h2>
-    <p class="section-lede">Every yellow blob is a town I cover. Tap one to see that town's page.</p>
+    <h2 id="map-heading">Coverage map</h2>
+    <p class="section-lede">Each circle marks a town I cover. Tap one to see that town's page.</p>
     <div id="area-map" class="area-map" role="region" aria-label="Map of the towns I cover">
       <noscript><p>The map needs JavaScript. All the towns I cover are listed below.</p></noscript>
     </div>
@@ -35,7 +35,7 @@ description: I visit homes and businesses across Eastbourne, Bexhill, Hastings, 
 </section>
 <section class="section section-tint">
   <div class="container narrow prose">
-    <h2>Not on the list? Don't sulk.</h2>
+    <h2>Not on the list?</h2>
     <p>If you're in a village nearby, such as Herstmonceux, East Dean, Friston, Ninfield or Battle, just ask. I can often fit you in, and I'll let you know if there's a small travel charge before booking.</p>
     <p>Further afield? <a href="/remote-help/">Remote help</a> works anywhere in the UK.</p>
   </div>
@@ -58,7 +58,7 @@ description: I visit homes and businesses across Eastbourne, Bexhill, Hastings, 
     var bounds = [];
     var wide = el.offsetWidth > 600; // on phones, names show on tap instead of crowding the map
     towns.forEach(function (t) {
-      var circle = L.circle([t.lat, t.lng], { radius: 2200, color: "#111", weight: 3, fillColor: "#ffe03a", fillOpacity: 0.55 }).addTo(map);
+      var circle = L.circle([t.lat, t.lng], { radius: 2200, color: "#1f6577", weight: 2, fillColor: "#9cc7cf", fillOpacity: 0.45 }).addTo(map);
       // Short names, nudged apart where towns sit close together
       var label = t.name.replace(/-on-Sea$/, "").split(" and ")[0];
       var dir = { westham: "left", pevensey: "right", "st-leonards": "left", hastings: "right", willingdon: "left", polegate: "left" }[t.slug] || "center";

@@ -4,7 +4,7 @@
     {
       "name": "Splashtop SOS",
       "primary": true,
-      "summary": "My trusty main tool. Open it, read me the 9-digit code, and once you say yes, I can see your screen.",
+      "summary": "My main remote support tool. Open it, read me the 9-digit code, and once you say yes, I can see your screen.",
       "page": "https://www.splashtop.com/sos",
       "platforms": [
         { "label": "Windows", "url": "https://www.splashtop.com/sos" },
@@ -16,7 +16,7 @@
     {
       "name": "TeamViewer QuickSupport",
       "primary": false,
-      "summary": "The trusty sidekick. Open it and read me your ID and the password it shows.",
+      "summary": "An alternative if Splashtop isn't suitable. Open it and read me your ID and the password it shows.",
       "page": "https://www.teamviewer.com/en/download/",
       "platforms": [
         { "label": "Windows", "url": "https://www.teamviewer.com/en/download/windows/" },

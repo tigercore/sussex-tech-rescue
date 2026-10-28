@@ -1,0 +1,131 @@
+/* ===== Sussex Tech Rescue: coastal finish. Layered on top of styles.css ===== */
+
+/* Headings: a quiet serif, sentence case */
+h1, h2, h3, .h3, .brand-name, .price { font-weight: 600; letter-spacing: -.01em; }
+h1 { font-size: clamp(2.3rem, 5vw, 3.4rem); line-height: 1.1; }
+h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.15; }
+.section h2 { margin-bottom: .7em; }
+:focus-visible { outline: 3px solid var(--color-secondary); outline-offset: 2px; }
+
+.eyebrow { background: transparent; color: var(--color-secondary); padding: 0; border-radius: 0; font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; }
+.section-sea .eyebrow { background: transparent; color: var(--color-surf); }
+.section-sea h2 { color: #fff; }
+
+/* Buttons */
+.btn { border-radius: var(--radius-small); }
+.btn-primary { background: var(--color-primary); }
+.btn-primary:hover { background: var(--color-secondary); }
+.btn-light { border-color: var(--color-border); }
+.btn-outline:hover { background: var(--color-primary); color: #fff; }
+.btn-whatsapp:hover { background: #155636; }
+.nav-cta a.btn { border-radius: var(--radius-small); }
+
+/* Header */
+.brand-name { font-size: 1.45rem; }
+.brand-name small { display: block; font-family: var(--font-body); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--color-secondary); margin-top: .05rem; }
+
+/* Ticker: a slim, slow-moving strip under the header */
+.ticker { background: var(--color-tint); color: var(--color-primary); border-bottom: 1px solid var(--color-border); overflow: hidden; white-space: nowrap; font-size: .95rem; padding: .4rem 0; }
+.ticker-track { display: flex; width: max-content; animation: ticker 70s linear infinite; }
+.ticker-group { display: flex; flex-shrink: 0; }
+.ticker-track span { margin: 0 .9rem; }
+.ticker-track .star { color: var(--color-surf); }
+@keyframes ticker { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; padding-left: 1rem; } }
+
+/* Hero */
+.hero { background: linear-gradient(180deg, var(--color-tint), var(--color-bg)); border-bottom: 1px solid var(--color-border); }
+.hero-service { background: var(--color-tint); }
+.hero .eyebrow { margin-bottom: 1rem; }
+.hero h1 .line2 { display: block; color: var(--color-secondary); }
+.hero-img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); }
+.hero-art-wrap { position: relative; }
+
+/* Price badge on the hero photo: a plain rounded label */
+.burst { position: absolute; z-index: 2; left: 1rem; bottom: 1rem; padding: .6rem 1rem; border-radius: var(--radius-small); background: var(--color-primary); color: #fff; line-height: 1.2; font-size: .95rem; box-shadow: var(--shadow); }
+.burst strong { font-family: var(--font-heading); font-weight: 600; font-size: 1.6rem; margin: 0 .3rem; }
+
+/* Tagline under the headline */
+.bubble { display: block; margin: 0 0 1.25rem; font-family: var(--font-hand); font-style: italic; font-size: 1.35rem; color: var(--color-muted); }
+
+/* Strap of categories under the hero */
+.strap { background: var(--color-primary); color: #fff; }
+.strap ul { list-style: none; margin: 0 auto; padding: .9rem 1rem; display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 2rem; max-width: var(--container); }
+.strap li { font-size: 1.05rem; font-weight: 700; display: flex; align-items: center; gap: .5rem; }
+.strap svg { width: 22px; height: 22px; color: var(--color-surf); }
+.strap li.sticker { font-weight: 400; font-style: italic; color: var(--color-sun); }
+
+/* Cards and boxes: hairline borders, soft shadow on hover only */
+.card-link:hover { border-color: var(--color-secondary); box-shadow: var(--shadow); }
+.steps li { background: var(--color-surface); border: 1px solid var(--color-border); }
+.step-num { background: var(--color-tint); color: var(--color-primary); font-family: var(--font-heading); border: 1px solid var(--color-surf); }
+.price-card-featured { border: 2px solid var(--color-secondary); background: linear-gradient(180deg, var(--color-tint), #fff 45%); }
+.chips li::before { background-color: var(--color-secondary); }
+.badge { background: var(--color-tint); color: var(--color-secondary); }
+.callout { background: var(--color-sand); border-left-color: var(--color-secondary); }
+.ask-list li { border-radius: var(--radius); }
+.photo-placeholder { border: 2px dashed var(--color-border); }
+
+/* Price strip and CTA band */
+.price-strip { background: var(--color-primary); font-weight: 400; }
+.price-strip strong { color: var(--color-sun); }
+.cta-band { background: var(--color-primary); color: #fff; }
+.cta-band h2 { color: #fff; }
+.cta-band p { color: rgba(255, 255, 255, .85); }
+.section-sea { background: var(--color-primary); }
+
+/* Compare: a clear but calm "me" vs "the other lot" */
+.compare { align-items: center; gap: 2rem; }
+@media (min-width: 761px) { .compare { grid-template-columns: 1.3fr 1fr; } }
+.compare-col { position: relative; padding-top: 2.4rem; }
+/* The "me" box leads: bigger, stronger and lifted; the alternative sits back */
+.compare-yes { background: #e6f2ec; border: 3px solid var(--color-yes); box-shadow: 0 14px 36px rgba(43, 110, 79, .22); padding: 3rem 2.2rem 2.2rem; font-size: 1.12em; }
+.compare-yes h3 { font-size: 1.7rem; color: var(--color-yes); }
+.compare-yes li { font-weight: 700; color: var(--color-text); border-top-color: rgba(43, 110, 79, .15); }
+.compare-yes .compare-tag { font-size: 1rem; padding: .35rem 1rem; }
+.compare-no { background: #f6f4f2; border: 1px dashed #c9c2bb; font-size: .95em; opacity: .85; }
+.compare-no h3 { color: var(--color-muted); font-size: 1.15rem; }
+.compare-tag { position: absolute; top: -.85rem; left: 1.25rem; margin: 0; display: inline-flex; align-items: center; gap: .4rem; padding: .2rem .75rem; border-radius: 999px; font-size: .85rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #fff; }
+.compare-tag svg { width: 1em; height: 1em; color: #fff !important; }
+.compare-yes .compare-tag { background: var(--color-yes); }
+.compare-no .compare-tag { background: var(--color-muted); }
+.compare-col li svg { border-radius: 50%; padding: 3px; color: #fff !important; }
+.compare-yes li svg { background: var(--color-yes); }
+.compare-no li svg { background: var(--color-no); }
+
+/* Polaroids become simple framed photos */
+.snap, .snap-right { transform: none; border: 1px solid var(--color-border); border-radius: var(--radius); }
+.snap figcaption { font-style: italic; font-weight: 400; font-size: 1.1rem; color: var(--color-muted); }
+.js-reveal .snap.is-visible, .js-reveal .snap-right.is-visible { transform: none !important; }
+
+/* Handwritten bits become serif italics */
+.hand { font-style: italic; font-weight: 400; font-size: 1.25rem; color: var(--color-secondary); }
+.quote-big { font-style: italic; font-weight: 400; font-size: clamp(1.8rem, 3.5vw, 2.4rem); }
+.signoff { font-style: italic; font-weight: 400; font-size: 1.5rem; color: var(--color-secondary); }
+.doodle-wave { margin: 0 auto 3rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 22'%3E%3Cpath d='M3 12c12-9 22-9 33 0s22 8 34-1 22-8 33 1 23 8 34-1 22-9 33 0 22 9 32 1' fill='none' stroke='%239cc7cf' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"); }
+.scribble { background: none; padding: 0; color: var(--color-secondary); }
+
+/* Rotating gadget word in the homepage headline */
+.rotate-word { display: table; color: var(--color-secondary); transition: opacity .3s ease; }
+.rotate-word.is-out { opacity: 0; }
+
+/* "Are you really an uncle?" video, framed like a phone */
+.video-card { margin: 0 auto; max-width: 320px; background: var(--color-primary); border-radius: 22px; padding: 10px; box-shadow: var(--shadow); }
+.video-card video { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--color-primary); }
+.video-card figcaption { color: #fff; font-style: italic; text-align: center; padding: .4rem 0 .1rem; }
+
+/* Areas page coverage map */
+.area-map { height: clamp(320px, 55vw, 520px); border: 1px solid var(--color-border); border-radius: var(--radius); box-shadow: var(--shadow); background: var(--color-tint); z-index: 0; }
+.area-map .leaflet-interactive { cursor: pointer; }
+.leaflet-tooltip.map-label { background: var(--color-primary); color: #fff; border: 0; border-radius: 999px; box-shadow: none; font-family: var(--font-body); font-size: .85rem; font-weight: 700; padding: .1rem .55rem; }
+.leaflet-tooltip.map-label::before { display: none; }
+@media (max-width: 600px) { .leaflet-tooltip.map-label { font-size: .75rem; padding: 0 .4rem; } }
+.photo-placeholder { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 80'%3E%3Ccircle cx='60' cy='30' r='14' fill='%23e7d8b9'/%3E%3Cpath d='M10 58c10-7 20-7 30 0s20 7 30 0 20-7 30 0' fill='none' stroke='%239cc7cf' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E"); }
+/* A hero with words only (no photo) uses one comfortable column */
+.hero-inner:has(> :only-child) { grid-template-columns: 1fr; max-width: 820px; }
+
+/* Keep neighbouring dark bands distinct: booking, CTA and the category strap use harbour teal,
+   so they never sit navy-on-navy against the price strip or the footer */
+.section-sea, .cta-band, .strap { background: var(--color-secondary); }
+.section-sea .eyebrow { color: #fff; opacity: .85; }
+.strap svg { color: #fff; }

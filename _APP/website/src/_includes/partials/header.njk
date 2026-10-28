@@ -35,7 +35,7 @@
   </div>
 </header>
 <div class="ticker" aria-hidden="true">
-  {%- set tickerItems = ["Hardware", "Software", "Problems", "Solutions", "…and tea-break tech tips!", "Have you tried turning it off and on again?", "Just " + (prices.hourly | gbp) + " an hour", prices.diagnosis, prices.noFixNoFee, "Coffee & debug", "It works on my machine", "Computer says no", "Eastbourne · Bexhill · Hastings · Seaford"] %}
+  {%- set tickerItems = ["Home visits across East Sussex", "Remote help anywhere in the UK", (prices.hourly | gbp) + " an hour", prices.diagnosis, prices.noFixNoFee, "Price agreed before I start", site.dbs, "Eastbourne · Bexhill · Hastings"] %}
   <div class="ticker-track">
     {%- for g in [1, 2] %}<div class="ticker-group">{% for t in tickerItems %}<span>{{ t }}</span><span class="star">★</span>{% endfor %}</div>{% endfor %}
   </div>
