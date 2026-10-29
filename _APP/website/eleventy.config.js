@@ -42,6 +42,55 @@ export default function (eleventyConfig) {
     });
   });
 
+  // Umami analytics: tag every call-to-action link with a click event, plus the page and the
+  // part of the page it sits in, e.g. Call · page "/about/" · location "header".
+  const ctaEvents = [
+    [/^tel:/, "Call"],
+    [/^https:\/\/wa\.me\//, "WhatsApp"],
+    [/^mailto:/, "Email"],
+    [/#book$/, "Book a visit"],
+    [/^#family-book$/, "Choose a plan"],
+    [/^#plans$/, "See plans"],
+    [/^\/remote-help\/$/, "Remote help"],
+    [/^https:\/\/(www\.)?(splashtop|teamviewer|apps\.apple|play\.google|my\.splashtop)\./, "Download remote app"],
+  ];
+  const ctaLocations = [
+    ['class="topbar', "top bar"], ["<header", "header"], ['class="ticker', "header"], ['class="mobile-bar', "mobile bar"],
+    ["<footer", "footer"], ['class="hero', "hero"], ['class="cta-band', "call to action band"],
+  ];
+  // A section is named by its id or aria-labelledby, or failing that by its first heading
+  const sectionName = (attrs, body) => {
+    const id = attrs.match(/(?:aria-labelledby|id)="([^"]+)"/);
+    const aliases = { book: "booking form", "family book": "family form" };
+    if (id) { const n = id[1].replace(/-heading$/, "").replace(/-/g, " "); return aliases[n] || n; }
+    const h = body.match(/<h[12][^>]*>([\s\S]*?)<\/h[12]>/);
+    return h ? h[1].replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").trim().toLowerCase().slice(0, 40) : "content";
+  };
+  const escapeAttr = (s) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+  eleventyConfig.addTransform("umami-cta-events", function (content) {
+    if (!(this.page.outputPath || "").endsWith(".html")) return content;
+    const pageUrl = this.page.url;
+    const sections = [...content.matchAll(/<section\b([^>]*)>/g)].map((m) => ({ at: m.index, name: sectionName(m[1], content.slice(m.index, m.index + 4000)) }));
+    return content.replace(/<a\s([^>]*?)href="([^"]+)"([^>]*)>([\s\S]*?)<\/a>/g, (match, before, href, after, inner, offset) => {
+      if (/data-umami-event=/.test(before + after)) return match;
+      const hit = ctaEvents.find(([re]) => re.test(href));
+      if (!hit) return match;
+      // Where on the page: the latest landmark or section that opened before this link
+      let location = "content", at = -1;
+      for (const [marker, name] of ctaLocations) {
+        const i = content.lastIndexOf(marker, offset);
+        if (i > at) { at = i; location = name; }
+      }
+      for (const s of sections) if (s.at < offset && s.at > at) { at = s.at; location = s.name; }
+      if (hit[1] === "Remote help" && !/class="[^"]*\bbtn\b/.test(before + after) && location !== "top bar") return match;
+      const heading = inner.match(/<h3[^>]*>([\s\S]*?)<\/h3>/);
+      const label = (heading ? heading[1] : inner).replace(/<svg[\s\S]*?<\/svg>/g, "").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim().slice(0, 100);
+      const plan = (before + after).match(/data-plan="([^"]*)"/);
+      const attrs = ` data-umami-event="${hit[1]}" data-umami-event-page="${escapeAttr(pageUrl)}" data-umami-event-location="${escapeAttr(location)}" data-umami-event-label="${escapeAttr(label)}"` + (plan ? ` data-umami-event-plan="${plan[1]}"` : "");
+      return `<a ${before}href="${href}"${after}${attrs}>${inner}</a>`;
+    });
+  });
+
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
   eleventyConfig.addFilter("gbp", (n) => `£${n}`);
   eleventyConfig.addFilter("findBySlug", (list, slug) => list.find((item) => item.slug === slug));

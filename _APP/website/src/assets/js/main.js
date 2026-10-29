@@ -73,3 +73,18 @@ document.querySelectorAll("[data-plan]").forEach(function (btn) {
     }, 250);
   }, 2200);
 })();
+
+// Umami: record a successful form send (the browser only fires submit once required fields are filled).
+document.querySelectorAll("form.booking-form").forEach(function (form) {
+  form.addEventListener("submit", function () {
+    if (!window.umami) return;
+    var data = { form: form.getAttribute("name"), page: location.pathname };
+    var problem = form.querySelector("[name=problem]");
+    var plan = form.querySelector("[name=plan]");
+    var town = form.querySelector("[name=town], [name=their-town]");
+    if (problem) data.problem = problem.value;
+    if (plan) data.plan = plan.value;
+    if (town) data.town = town.value;
+    window.umami.track("Form submit", data);
+  });
+});
