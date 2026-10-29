@@ -3,7 +3,7 @@ permalink: /business-it-support/
 title: Small business IT support in Eastbourne and Bexhill
 description: Pay-as-you-go IT support for small businesses, shops, offices and trades in Eastbourne, Bexhill and East Sussex. No contracts or monthly fees.
 eyebrow: Small business IT
-heading: IT support for small businesses
+heading: Your IT department. Minus the department.
 lede: For shops, offices, cafés, salons and trades whose technology needs to work reliably, without paying for a large IT contract you'll hardly use.
 formProblem: Small business IT
 ctaLabel: Book a business visit

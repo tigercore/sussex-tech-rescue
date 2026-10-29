@@ -3,9 +3,18 @@
     <p class="eyebrow">How it works</p>
     <h2 id="steps-heading">Three simple steps</h2>
     <ol class="steps">
-      <li><span class="step-num">1</span><h3>Give me a ring</h3><p>Call, send a WhatsApp or fill in the form. Just tell me what's wrong in your own words. No technical terms needed.</p></li>
+      <li><span class="step-num">1</span><h3>Give me a ring</h3><p>Call, send a WhatsApp or fill in the form. Just tell me what's wrong in your own words. "The thingy's gone funny" is a perfectly good description.</p></li>
       <li><span class="step-num">2</span><h3>I visit you</h3><p>I'll agree a time that suits you, often the same day or the next, and come to your home.</p></li>
       <li><span class="step-num">3</span><h3>Back to normal</h3><p>I sort the problem, show you what I did, and leave you a few notes if you'd like. You pay on the day.</p></li>
     </ol>
+    {%- if site.dropOff %}
+    <div class="callout drop-off">
+      <span class="card-icon">{% icon "package" %}</span>
+      <div>
+        <h3>Local? You can drop it round</h3>
+        <p>Rather not wait in for a visit? Bring your laptop, computer or tablet to me at <strong>{{ site.dropOff }}</strong>. Give me a ring first so I know to expect you, and I'll call you as soon as it's ready to collect.</p>
+      </div>
+    </div>
+    {%- endif %}
   </div>
 </section>

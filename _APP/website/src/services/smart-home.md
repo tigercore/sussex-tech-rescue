@@ -11,7 +11,7 @@ problemsHeading: Devices I set up
 problems:
   - { icon: "bell-ring", title: "Video doorbells", text: "Fitted, connected and set up so your phone pings when someone's at the door, not three hours later." }
   - { icon: "cctv", title: "Security cameras", text: "Indoor and outdoor cameras pointed at the right areas, with sensible privacy settings." }
-  - { icon: "speaker", title: "Smart speakers", text: "Alexa or Google set up for music, reminders, the radio and hands-free calls."  }
+  - { icon: "speaker", title: "Smart speakers", text: "Alexa or Google set up for music, reminders, the radio and hands-free calls. They'll even listen. Mostly." }
   - { icon: "thermometer", title: "Smart heating", text: "Hive, Nest and Tado set up with schedules that keep you warm and save money." }
   - { icon: "plug", title: "Smart plugs and lights", text: "Lamps on a timer, lights by voice and little routines that make life easier." }
   - { icon: "house", title: "Holiday lets", text: "Smart locks, thermostats and guest Wi-Fi you can manage from your own sofa." }

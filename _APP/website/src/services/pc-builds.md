@@ -1,10 +1,10 @@
 ---
 permalink: /custom-pc-builds/
 title: Custom gaming and work PC builds in Eastbourne and Bexhill
-description: Custom gaming PCs and work computers built to your budget in East Sussex. Parts at cost, honest advice and set-up included.
+description: Custom gaming PCs, work computers and Plex media servers built to your budget in East Sussex. Parts at cost, honest advice and set-up included.
 eyebrow: Custom PC builds
-heading: Custom PCs, built to your budget
-lede: A powerful gaming PC, a whisper-quiet machine for photo editing or a reliable workhorse for the office. I'll spec it to your budget, build it, test it and set it up.
+heading: Custom PCs, built to your budget. Extra fans optional.
+lede: A powerful gaming PC, a whisper-quiet machine for photo editing, a reliable workhorse for the office, or a Plex server for your films and TV. I'll spec it to your budget, build it, test it and set it up.
 formProblem: Custom PC builds
 showPricing: false
 chips: ["Parts at cost", "Receipts shown", "Set up and ready to go"]
@@ -14,6 +14,8 @@ problems:
   - { icon: "palette", title: "Creative workstations", text: "For photo, video and music work, with fast storage and plenty of memory, so you're not watching progress bars all day." }
   - { icon: "folder-open", title: "Office and home PCs", text: "Quiet, reliable and built to last, with Windows and your software ready to go." }
   - { icon: "circle-arrow-up", title: "Upgrades", text: "A new graphics card, more memory or a faster drive can give a tired old PC a second wind." }
+  - { icon: "film", title: "Plex media server set-up", text: "Your own Netflix for the films, TV, music and photos you already own. I'll set up Plex on a PC, NAS or mini server and get it playing on every TV, phone and tablet in the house, and away from home too." }
+  - { icon: "server", title: "Home servers and storage", text: "Quiet, always-on storage for backups, photos and media, shared safely with the whole family." }
 ---
 ## How it works
 

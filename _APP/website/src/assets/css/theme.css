@@ -1,14 +1,17 @@
 /* =========================================================
    SUSSEX TECH RESCUE THEME
-   Calm and coastal: deep sea navy, sea-glass teal and soft
-   sand. Every colour and font on the site comes from these
+   Calm and coastal: deep sea navy, sea-glass teal, soft
+   sand and a warm sandy coral. Every colour and font on the site comes from these
    variables.
    ========================================================= */
-@font-face { font-family: "Atkinson Hyperlegible"; src: url("/assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: "Atkinson Hyperlegible"; src: url("/assets/fonts/atkinson-hyperlegible-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: "Atkinson Hyperlegible"; src: url("/assets/fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: "Source Serif 4"; src: url("/assets/fonts/source-serif-4-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: "Source Serif 4"; src: url("/assets/fonts/source-serif-4-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Söhne"; src: url("/assets/fonts/soehne-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Söhne"; src: url("/assets/fonts/soehne-RegularItalic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Söhne"; src: url("/assets/fonts/soehne-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Söhne"; src: url("/assets/fonts/soehne-BoldItalic.woff2") format("woff2"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Parkly"; src: url("/assets/fonts/ParklySoft-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cartridge"; src: url("/assets/fonts/CartridgeSB-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Ships Whistle"; src: url("/assets/fonts/ShipsWhistleBoldItalicRough-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Paint Factory"; src: url("/assets/fonts/PaintFactoryBold-Bold.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 
 :root {
   /* Brand colours */
@@ -17,8 +20,9 @@
   --color-secondary: #1f6577;      /* harbour teal: links, icons (6.6:1 with white) */
   --color-surf: #9cc7cf;           /* pale surf */
   --color-sun: #e7d8b9;            /* dry sand highlight */
-  --color-accent: #1f6577;         /* main buttons */
-  --color-accent-hover: #174f5d;
+  --color-accent: #b4553a;         /* sandy coral: Book buttons and highlights (4.9:1 with white) */
+  --color-accent-hover: #9a4630;
+  --color-coral-soft: #f6e2d8;
   --color-accent-ink: #ffffff;
   --color-hot: #a8513a;            /* weathered brick, used sparingly (5.6:1 with white) */
   --color-whatsapp: #1c6b45;       /* 6.3:1 with white */
@@ -38,9 +42,10 @@
   --color-muted: #4b5b64;
 
   /* Type */
-  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --font-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --font-hand: "Source Serif 4", Georgia, serif;   /* used in italic for quotes and sign-offs */
+  --font-body: "Söhne", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-heading: "Parkly", "Arial Narrow", system-ui, sans-serif;   /* single weight: keep headings at 400 */
+  --font-hand: "Ships Whistle", "Bradley Hand", "Segoe Print", cursive;   /* signature and small handwritten notes only */
+  --font-label: "Paint Factory", "Arial Narrow", system-ui, sans-serif;   /* small uppercase labels */
   --font-size-base: 1.125rem;
 
   /* Shape */

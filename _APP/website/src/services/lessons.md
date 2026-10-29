@@ -3,7 +3,7 @@ permalink: /tech-lessons/
 title: One-to-one tech lessons at home in Eastbourne and Bexhill
 description: Friendly one-to-one computer, phone and tablet lessons at your home or office in Eastbourne, Bexhill and East Sussex. Plain English, at your own pace.
 eyebrow: Tech lessons
-heading: One-to-one tech lessons at home
+heading: One-to-one tech lessons at home. No homework.
 lede: Want to actually understand the thing, not just have it fixed? I'll sit with you at your kitchen table (or your office) and teach you, one-to-one, in plain English, at whatever pace suits you.
 formProblem: Tech lessons
 chips: ["One-to-one", "At your home or office", "Notes to keep"]

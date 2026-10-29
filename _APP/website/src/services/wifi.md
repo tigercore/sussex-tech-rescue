@@ -10,7 +10,7 @@ chips: ["Mesh Wi-Fi", "Garden offices", "Business and guest Wi-Fi"]
 problemsHeading: Common Wi-Fi problems I fix
 problems:
   - { icon: "bed", title: "No signal upstairs", text: "Strong next to the router, but weak in the bedroom. A common and very fixable problem." }
-  - { icon: "trees", title: "The garden office", text: "Proper internet at the bottom of the garden, without a cable trailing across the lawn." }
+  - { icon: "trees", title: "The garden office", text: "Proper internet at the bottom of the garden, without a cable trailing across the lawn for the dog to chew." }
   - { icon: "trending-down", title: "Paying for speed you don't get", text: "I test what's actually reaching your devices and tell you honestly where the bottleneck is." }
   - { icon: "refresh-cw", title: "Constant drop-outs", text: "Frozen video calls, and endless buffering. Usually interference, channels or tired old kit." }
   - { icon: "heart-handshake", title: "Business and guest Wi-Fi", text: "Separate, secure networks for staff, tills and customers." }

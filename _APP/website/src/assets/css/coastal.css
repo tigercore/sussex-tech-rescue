@@ -46,7 +46,7 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.15; }
 .burst strong { font-family: var(--font-heading); font-weight: 600; font-size: 1.6rem; margin: 0 .3rem; }
 
 /* Tagline under the headline */
-.bubble { display: block; margin: 0 0 1.25rem; font-family: var(--font-hand); font-style: italic; font-size: 1.35rem; color: var(--color-muted); }
+.bubble { display: block; margin: 0 0 1.25rem; font-family: var(--font-heading); font-weight: 400; font-style: italic; font-size: 1.35rem; color: var(--color-muted); }
 
 /* Strap of categories under the hero */
 .strap { background: var(--color-primary); color: #fff; }
@@ -100,7 +100,7 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.15; }
 
 /* Handwritten bits become serif italics */
 .hand { font-style: italic; font-weight: 400; font-size: 1.25rem; color: var(--color-secondary); }
-.quote-big { font-style: italic; font-weight: 400; font-size: clamp(1.8rem, 3.5vw, 2.4rem); }
+.quote-big { font-family: var(--font-heading); font-style: italic; font-weight: 400; font-size: clamp(1.8rem, 3.5vw, 2.4rem); }
 .signoff { font-style: italic; font-weight: 400; font-size: 1.5rem; color: var(--color-secondary); }
 .doodle-wave { margin: 0 auto 3rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 22'%3E%3Cpath d='M3 12c12-9 22-9 33 0s22 8 34-1 22-8 33 1 23 8 34-1 22-9 33 0 22 9 32 1' fill='none' stroke='%239cc7cf' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"); }
 .scribble { background: none; padding: 0; color: var(--color-secondary); }
@@ -129,3 +129,49 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.15; }
 .section-sea, .cta-band, .strap { background: var(--color-secondary); }
 .section-sea .eyebrow { color: #fff; opacity: .85; }
 .strap svg { color: #fff; }
+
+/* ---------- Warm, hand-drawn touches ---------- */
+/* A small coral wave under section headings */
+.eyebrow + h2::after, .section .container > h2:first-child::after { content: ""; display: block; width: 72px; height: 10px; margin-top: .45rem; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 10'%3E%3Cpath d='M2 6c6-5 11-5 17 0s11 5 17 0 11-5 17 0 11 5 17 0' fill='none' stroke='%23b4553a' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") left center / contain no-repeat; }
+.section-sea .eyebrow + h2::after, .cta-band h2::after { filter: brightness(2.2); }
+.doodle-wave { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 22'%3E%3Cpath d='M3 12c12-9 22-9 33 0s22 8 34-1 22-8 33 1 23 8 34-1 22-9 33 0 22 9 32 1' fill='none' stroke='%23b4553a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"); }
+
+/* Photos as gently tilted prints */
+.snap { background: #fff; padding: .7rem .7rem 0; transform: rotate(-1.5deg); box-shadow: var(--shadow); }
+.snap-right { transform: rotate(1.5deg); }
+.snap figcaption { font-family: var(--font-hand); font-style: normal; font-weight: 600; font-size: 1.45rem; color: var(--color-primary); padding: .45rem .25rem .6rem; }
+.js-reveal .snap.is-visible { transform: rotate(-1.5deg) !important; }
+.js-reveal .snap-right.is-visible { transform: rotate(1.5deg) !important; }
+@media (max-width: 860px) { .snap, .snap-right, .js-reveal .snap.is-visible, .js-reveal .snap-right.is-visible { transform: none !important; } }
+
+/* Handwritten signature and notes */
+.signoff { font-family: var(--font-hand); font-style: normal; font-weight: 600; font-size: 2.3rem; line-height: 1; color: var(--color-accent); margin: .2rem 0 1.2rem; transform: rotate(-3deg); transform-origin: left; }
+.hand { font-family: var(--font-hand); font-style: normal; font-weight: 600; font-size: 1.6rem; color: var(--color-accent); }
+.video-card { transform: rotate(1.5deg); }
+.video-card figcaption { font-family: var(--font-hand); font-style: normal; font-size: 1.35rem; }
+
+/* Coral highlights */
+.ticker-track .star { color: var(--color-accent); }
+.badge { background: var(--color-coral-soft); color: #8a3f2a; }
+.step-num { background: var(--color-coral-soft); border-color: #e7bfae; color: #8a3f2a; }
+.chips li::before { background-color: var(--color-accent); }
+.price-strip strong { color: #f3c3ad; }
+@media (prefers-reduced-motion: reduce) { .signoff { transform: none; } }
+
+/* ---------- Typefaces: Cartridge headings, Söhne body, Ships Whistle notes, Paint Factory labels ---------- */
+h1, h2, h3, .h3, .brand-name, .price, .step-num, .booking-form legend, .footer-heading { font-weight: 400; letter-spacing: 0; }
+.bubble, .quote-big { font-family: var(--font-body); }
+.hand, .signoff, .snap figcaption, .video-card figcaption { font-weight: 400; }
+.eyebrow, .compare-tag, .badge { font-family: var(--font-label); font-weight: 400; letter-spacing: .08em; font-size: 1rem; }
+.strap li { font-family: var(--font-label); font-weight: 400; font-size: 1.3rem; letter-spacing: .05em; text-transform: uppercase; }
+/* Parkly is a condensed display face: give headings a little more size and air */
+h1 { font-size: clamp(2.8rem, 6vw, 4.2rem); line-height: 1; letter-spacing: .01em; }
+h2 { font-size: clamp(2rem, 3.6vw, 2.8rem); letter-spacing: .01em; }
+h3, .h3 { font-size: 1.5rem; letter-spacing: .02em; }
+.price { font-size: 3.2rem; }
+
+/* "Drop it round" note under the three steps */
+.drop-off { display: flex; gap: 1rem; align-items: flex-start; margin-top: 2rem; background: var(--color-coral-soft); border-left-color: var(--color-accent); }
+.drop-off .card-icon { color: var(--color-accent); margin: .15rem 0 0; }
+.drop-off h3 { margin-bottom: .3rem; }
+.drop-off p { margin: 0; }
