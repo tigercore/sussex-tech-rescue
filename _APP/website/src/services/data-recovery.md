@@ -1,7 +1,7 @@
 ---
 permalink: /data-recovery/
 title: Data and photo recovery in Eastbourne and Bexhill
-description: Lost photos or files? Data recovery from hard drives, memory cards, USB sticks and dead laptops in Eastbourne, Bexhill and East Sussex. Free diagnosis, no fix no fee.
+description: Lost photos or files? Data recovery from hard drives, memory cards, USB sticks and dead laptops in Eastbourne and Bexhill. Free diagnosis, no fix no fee.
 eyebrow: Data recovery
 heading: Lost your photos or files?
 lede: Deleted by accident, a laptop that won't switch on, or a memory card that suddenly says it's empty. Files can often still be recovered, and I'll do my best to get them back.

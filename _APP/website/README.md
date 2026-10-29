@@ -37,9 +37,7 @@ The booking form uses Netlify Forms. After the first deploy, open **Site configu
 ## Placeholders to replace before launch
 
 - Logo (the name is set in site.json)
-- Email address (`hello@example.com`) and opening hours in `site.json`
 - Phone/WhatsApp number in `site.json`
-- `url` in `site.json` once the domain is known (used for canonical links and the sitemap)
 - Photo of Ryan
 - Splashtop SOS links: swap in your own branded SOS download link
 - Privacy notice: review the draft

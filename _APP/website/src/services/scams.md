@@ -1,7 +1,7 @@
 ---
 permalink: /been-scammed/
 title: Been scammed? What to do right now
-description: Clicked a scam link, let someone onto your computer or given out bank details? Urgent steps to take, and local help in Eastbourne and Bexhill to clean up your devices.
+description: Clicked a scam link or let someone onto your computer? What to do right now, plus calm local help in Eastbourne and Bexhill to secure your devices.
 eyebrow: Been scammed?
 heading: Think you've been scammed? I can help.
 lede: It happens to careful, clever people every single day, because scammers are professionals. What matters is acting quickly, and you don't have to sort it out on your own. There's no judgement here.

@@ -1,7 +1,7 @@
 ---
 permalink: /tech-help-at-your-own-pace/
 title: Patient computer and tech help at your own pace in Eastbourne and Bexhill
-description: Patient, friendly computer, tablet and phone help in Eastbourne, Bexhill and East Sussex. Ideal if you are new to tech or feel left behind. At your own pace, in plain English.
+description: Patient computer, tablet and phone help in Eastbourne and Bexhill, ideal if you're new to tech or feel left behind. At your own pace, in plain English.
 eyebrow: Tech help at your own pace
 heading: Patient tech help, at your own pace
 lede: '"I don''t know anything about computers" is the thing I hear most, and that''s absolutely fine. I''ll visit you, sort out what''s wrong and make sure you''re happy before I leave.'
