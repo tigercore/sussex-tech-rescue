@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 permalink: /areas/
 title: Areas I cover in East Sussex
-description: I visit homes and businesses across Eastbourne, Bexhill, Hastings, St Leonards, Polegate, Hailsham, Pevensey, Westham, Willingdon and Seaford.
+description: I visit homes and businesses across Eastbourne, Bexhill, Hastings, St Leonards, Polegate, Hailsham, Pevensey, Westham and Willingdon.
 ---
 <section class="page-hero">
   <div class="container narrow">
@@ -14,7 +14,7 @@ description: I visit homes and businesses across Eastbourne, Bexhill, Hastings, 
 <section class="section section-tint" aria-labelledby="map-heading">
   <div class="container">
     <h2 id="map-heading">Coverage map</h2>
-    <p class="section-lede">Each circle marks a town I cover. Tap one to see that town's page.</p>
+    <p class="section-lede">The shaded area shows where I cover. Tap a town's name to see its page.</p>
     <div id="area-map" class="area-map" role="region" aria-label="Map of the towns I cover">
       <noscript><p>The map needs JavaScript. All the towns I cover are listed below.</p></noscript>
     </div>
@@ -55,17 +55,35 @@ description: I visit homes and businesses across Eastbourne, Bexhill, Hastings, 
       maxZoom: 18,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-    var bounds = [];
-    var wide = el.offsetWidth > 600; // on phones, names show on tap instead of crowding the map
+    // One coverage area: the outline around a 2.2 km ring of points at each town (convex hull)
+    var R = 2200, pts = [];
     towns.forEach(function (t) {
-      var circle = L.circle([t.lat, t.lng], { radius: 2200, color: "#1f6577", weight: 2, fillColor: "#9cc7cf", fillOpacity: 0.45 }).addTo(map);
-      // Short names, nudged apart where towns sit close together
+      var dLat = R / 111320, dLng = R / (111320 * Math.cos(t.lat * Math.PI / 180));
+      for (var a = 0; a < 360; a += 10) {
+        var r = a * Math.PI / 180;
+        pts.push([t.lat + dLat * Math.sin(r), t.lng + dLng * Math.cos(r)]);
+      }
+    });
+    pts.sort(function (p, q) { return p[1] - q[1] || p[0] - q[0]; });
+    function cross(o, a, b) { return (a[1] - o[1]) * (b[0] - o[0]) - (a[0] - o[0]) * (b[1] - o[1]); }
+    var lower = [], upper = [];
+    pts.forEach(function (p) { while (lower.length > 1 && cross(lower[lower.length - 2], lower[lower.length - 1], p) <= 0) lower.pop(); lower.push(p); });
+    pts.slice().reverse().forEach(function (p) { while (upper.length > 1 && cross(upper[upper.length - 2], upper[upper.length - 1], p) <= 0) upper.pop(); upper.push(p); });
+    var hull = lower.slice(0, -1).concat(upper.slice(0, -1));
+    var area = L.polygon(hull, { color: "#1f6577", weight: 2, fillColor: "#9cc7cf", fillOpacity: 0.35, interactive: false }).addTo(map);
+    function fit() { map.invalidateSize(); map.fitBounds(area.getBounds(), { padding: el.offsetWidth > 600 ? [20, 20] : [45, 10] }); } // extra side room on phones so edge labels fit
+    fit();
+    // The map can be laid out before the stylesheet gives it a height, so fit again once it has a real size
+    if (window.ResizeObserver) new ResizeObserver(fit).observe(el); else window.addEventListener("load", fit);
+
+    var wide = el.offsetWidth > 600;
+    towns.forEach(function (t) {
+      // Short names, nudged apart where towns sit close together. Tap a name to open that town's page.
       var label = t.name.replace(/-on-Sea$/, "").split(" and ")[0];
       var dir = { westham: "left", pevensey: "right", "st-leonards": "left", hastings: "right", willingdon: "left", polegate: "left" }[t.slug] || "center";
-      circle.bindTooltip(label, { permanent: wide, direction: wide ? dir : "top", className: "map-label" });
-      circle.on("click", function () { window.location.href = "/computer-help-" + t.slug + "/"; });
-      bounds.push([t.lat, t.lng]);
+      var tip = L.tooltip({ permanent: true, interactive: true, direction: wide ? dir : "center", className: "map-label" })
+        .setLatLng([t.lat, t.lng]).setContent(label).addTo(map);
+      tip.getElement().addEventListener("click", function () { window.location.href = "/computer-help-" + t.slug + "/"; });
     });
-    map.fitBounds(bounds, { padding: [30, 30] });
   })();
 </script>

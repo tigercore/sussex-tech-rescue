@@ -203,26 +203,5 @@
     ],
     "lat": 50.796,
     "lng": 0.251
-  },
-  {
-    "slug": "seaford",
-    "name": "Seaford",
-    "postcodes": "BN25",
-    "travel": "Around 25 minutes from base",
-    "areas": [
-      "Town centre",
-      "Bishopstone",
-      "East Blatchington",
-      "Chyngton",
-      "Sutton"
-    ],
-    "intro": "Over the Downs from Eastbourne, Seaford is a quiet, friendly town where a good number of residents are retired, and plenty would rather have someone sit with them than wrestle with a helpline. I visit homes across Seaford to fix, set up and explain.",
-    "local": "Online banking safety, scam calls and keeping in touch with family on video calls are the things I'm asked about most here. I take the time to make sure you're confident before I leave, and I'm only ever a phone call away afterwards.",
-    "nearby": [
-      "eastbourne",
-      "willingdon"
-    ],
-    "lat": 50.772,
-    "lng": 0.102
   }
 ]

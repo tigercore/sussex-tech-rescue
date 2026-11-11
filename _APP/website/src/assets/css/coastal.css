@@ -119,6 +119,7 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); line-height: 1.15; }
 .area-map .leaflet-interactive { cursor: pointer; }
 .leaflet-tooltip.map-label { background: var(--color-primary); color: #fff; border: 0; border-radius: 999px; box-shadow: none; font-family: var(--font-body); font-size: .85rem; font-weight: 700; padding: .1rem .55rem; }
 .leaflet-tooltip.map-label::before { display: none; }
+.leaflet-tooltip.map-label.leaflet-interactive { cursor: pointer; }
 @media (max-width: 600px) { .leaflet-tooltip.map-label { font-size: .75rem; padding: 0 .4rem; } }
 .photo-placeholder { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 80'%3E%3Ccircle cx='60' cy='30' r='14' fill='%23e7d8b9'/%3E%3Cpath d='M10 58c10-7 20-7 30 0s20 7 30 0 20-7 30 0' fill='none' stroke='%239cc7cf' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E"); }
 /* A hero with words only (no photo) uses one comfortable column */
@@ -175,3 +176,13 @@ h3, .h3 { font-size: 1.5rem; letter-spacing: .02em; }
 .drop-off .card-icon { color: var(--color-accent); margin: .15rem 0 0; }
 .drop-off h3 { margin-bottom: .3rem; }
 .drop-off p { margin: 0; }
+
+/* Cookie banner: Accept and Reject are given equal weight, as UK guidance expects */
+.cookie-banner { position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 70; max-width: 40rem; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; padding: 1rem 1.25rem; background: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border); border-radius: var(--radius); box-shadow: 0 8px 30px rgba(0,0,0,.18); }
+.cookie-banner[hidden] { display: none; }
+.cookie-banner p { margin: 0; flex: 1 1 18rem; font-size: .95rem; }
+.cookie-banner-actions { display: flex; gap: .5rem; }
+.cookie-banner .btn { padding: .6rem 1.4rem; }
+.link-button { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; cursor: pointer; }
+@media (max-width: 760px) { .cookie-banner { bottom: 5rem; left: .75rem; right: .75rem; } .cookie-banner-actions { flex: 1 1 100%; } .cookie-banner-actions .btn { flex: 1; } }
+.site-footer .link-button { color: #fff; }

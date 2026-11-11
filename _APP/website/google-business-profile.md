@@ -11,7 +11,7 @@ Ready to paste into business.google.com. Prices match the website.
 - **Website:** https://sussextechrescue.co.uk
 - **Email (for your account, not shown publicly):** hello@sussextechrescue.co.uk
 - **Hours:** Monday to Saturday, 9am to 6pm. Sunday closed
-- **Service areas:** Eastbourne, Bexhill-on-Sea, Hastings, St Leonards-on-Sea, Polegate, Hailsham, Pevensey, Westham, Willingdon, Seaford
+- **Service areas:** Eastbourne, Bexhill-on-Sea, Hastings, St Leonards-on-Sea, Polegate, Hailsham, Pevensey, Westham, Willingdon
 - **Opening date:** add the month you started trading
 
 ## Business description

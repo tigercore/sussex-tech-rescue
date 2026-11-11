@@ -16,6 +16,22 @@
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <script defer src="https://cloud.umami.is/script.js" data-website-id="be2c6d27-e38b-4202-8842-4f43a0163daf"></script>
   <script>
+    // Google tag (Google Tag Manager). It sets Google Analytics cookies, so it only loads
+    // after the visitor clicks Accept on the cookie banner. The choice is kept in localStorage.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.strLoadGoogleTag = function () {
+      if (window.__gtmLoaded) return;
+      window.__gtmLoaded = true;
+      gtag('js', new Date());
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-WR9BS752';
+      document.head.appendChild(s);
+    };
+    try { if (localStorage.getItem('str-cookie-choice') === 'accepted') window.strLoadGoogleTag(); } catch (e) {}
+  </script>
+  <script>
     // Fade-in-up on scroll: only when motion is welcome and the browser supports it.
     if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
       document.documentElement.classList.add("js-reveal");
@@ -43,6 +59,7 @@
     <a href="https://wa.me/{{ site.whatsapp }}" class="btn btn-whatsapp">WhatsApp</a>
     <a href="/contact/#book" class="btn btn-light">Book</a>
   </div>
+  {% include "partials/cookie-banner.njk" %}
   <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

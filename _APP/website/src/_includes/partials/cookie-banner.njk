@@ -1,0 +1,42 @@
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie choice" hidden>
+  <p>Can I use Google Analytics cookies to see how people use this site? They're only for counting visits, never for adverts. <a href="/privacy/#cookies">More about cookies</a></p>
+  <div class="cookie-banner-actions">
+    <button type="button" class="btn btn-primary" data-cookie-choice="accepted">Accept</button>
+    <button type="button" class="btn btn-primary" data-cookie-choice="rejected">Reject</button>
+  </div>
+</div>
+<script>
+  // Cookie choice: show the banner until the visitor picks, and let them change their mind from the footer.
+  (function () {
+    var KEY = "str-cookie-choice";
+    var banner = document.getElementById("cookie-banner");
+    function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+    function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+    function clearGaCookies() {
+      var host = location.hostname.replace(/^www\./, "");
+      document.cookie.split(";").forEach(function (c) {
+        var name = c.split("=")[0].trim();
+        if (!/^_ga/.test(name)) return;
+        ["", "; domain=" + host, "; domain=." + host].forEach(function (d) {
+          document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + d;
+        });
+      });
+    }
+    if (!get()) banner.hidden = false;
+    banner.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-cookie-choice]");
+      if (!btn) return;
+      var choice = btn.getAttribute("data-cookie-choice");
+      var was = get();
+      set(choice);
+      banner.hidden = true;
+      if (choice === "accepted") window.strLoadGoogleTag();
+      else { clearGaCookies(); if (was === "accepted") location.reload(); }
+    });
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest("[data-cookie-settings]")) return;
+      banner.hidden = false;
+      banner.querySelector("button").focus();
+    });
+  })();
+</script>
