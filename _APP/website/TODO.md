@@ -9,7 +9,7 @@ Parked SEO and AI search (GEO) work for the Sussex Tech Rescue site.
 - [ ] Add `sameAs` links to the schema once the Google Business Profile and Facebook page exist
 - [ ] Add FAQPage schema to the FAQ sections (`src/_includes/partials/faqs.njk`)
 - [ ] Keep the 404 and thank-you pages out of search results (`noindex`)
-- [ ] Add real customer reviews to `src/_data/reviews.json` (the reviews section is hidden while the file is empty)
+- [ ] Set the Google reviews environment variables on Netlify (see README, "Google reviews")
 
 ## Off the site
 

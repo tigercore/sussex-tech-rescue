@@ -22,7 +22,8 @@ npm run build      # outputs to _site/
 | Towns and town page wording | `src/_data/towns.json` (one page is generated per town) |
 | Services menu and homepage service cards | `src/_data/services.json` |
 | "What we fix" cards | `src/_data/fixes.json` |
-| Reviews (section stays hidden while empty) | `src/_data/reviews.json`, e.g. `[{ "name": "Jane", "town": "Bexhill", "text": "..." }]` |
+| Google reviews (automatic, refreshed daily) | `src/_data/google.js`, see "Google reviews" below |
+| Extra reviews not on Google (shown after the Google ones) | `src/_data/reviews.json`, e.g. `[{ "name": "Jane", "town": "Bexhill", "text": "..." }]` |
 | Remote help download links | `src/_data/remote.json` |
 | Service page wording | `src/services/*.md` |
 | Logo | `src/_includes/partials/logo.njk` and `src/assets/img/favicon.svg` |
@@ -41,3 +42,15 @@ The booking form uses Netlify Forms. After the first deploy, open **Site configu
 - Photo of Ryan
 - Splashtop SOS links: swap in your own branded SOS download link
 - Privacy notice: review the draft
+
+## Google reviews
+
+The reviews section pulls the Google rating and the latest written reviews (Google gives up to five) from the Google Places API when the site is built. Visitors' browsers never contact Google, so there are no cookies and nothing for the consent banner to do. The section stays hidden until there is at least one written review.
+
+Setup on Netlify (Site configuration > Environment variables):
+
+- `GOOGLE_PLACES_API_KEY`: a Google Cloud API key with "Places API (New)" enabled, restricted to that API
+- `GOOGLE_PLACE_ID`: the Place ID of the Google Business Profile
+- `REVIEWS_BUILD_HOOK`: a build hook URL for `main` (Build & deploy > Build hooks). `netlify/functions/refresh-reviews.mjs` calls it every morning so new reviews appear within a day.
+
+Locally, `REVIEWS_PREVIEW=1 npm start` shows a sample review, or set the two Google variables to see the real ones (cached for 6 hours in `.cache/` so saving files doesn't keep calling Google).
