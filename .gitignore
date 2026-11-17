@@ -1,0 +1,8 @@
+# Local Netlify folder
+.netlify
+
+# Mac clutter
+.DS_Store
+
+# Source artwork and paid fonts: kept on this Mac only, as the repo is public
+_SOURCE/
