@@ -186,3 +186,26 @@ h3, .h3 { font-size: 1.5rem; letter-spacing: .02em; }
 .link-button { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; cursor: pointer; }
 @media (max-width: 760px) { .cookie-banner { bottom: 5rem; left: .75rem; right: .75rem; } .cookie-banner-actions { flex: 1 1 100%; } .cookie-banner-actions .btn { flex: 1; } }
 .site-footer .link-button { color: #fff; }
+
+/* Reviews: Google score on the left, quotes on the right. One review gets a bigger quote */
+.reviews-layout { display: grid; grid-template-columns: minmax(200px, 270px) 1fr; gap: 1.5rem; align-items: start; margin-top: 1.5rem; }
+.reviews-no-summary { grid-template-columns: 1fr; }
+@media (max-width: 760px) { .reviews-layout { grid-template-columns: 1fr; } }
+.reviews-summary { background: var(--color-tint); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.75rem 1.5rem; text-align: center; }
+.reviews-summary p { margin: 0; }
+.reviews-score { font-family: var(--font-heading); font-size: 3.6rem; line-height: 1; color: var(--color-primary); }
+.reviews-summary .stars { font-size: 1.6rem; margin: .3rem 0 .2rem; }
+.reviews-count { color: var(--color-muted); }
+.reviews-links { margin-top: 1rem !important; line-height: 1.9; font-weight: 700; }
+.stars { color: #c98d2b; letter-spacing: .08em; line-height: 1; margin: 0 0 .75rem; }
+.star-off { color: var(--color-border); }
+.reviews-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+.reviews-list .review-card blockquote { font-style: normal; }
+.reviews-list .review-card blockquote::before { content: "“"; }
+.reviews-list .review-card blockquote::after { content: "”"; }
+.reviews-list .review-card blockquote:has(a)::after { content: none; }
+.reviews-list:has(> :only-child) .review-card { padding: 2rem 2.25rem; }
+.reviews-list:has(> :only-child) blockquote { font-size: clamp(1.2rem, 2.2vw, 1.45rem); line-height: 1.5; color: var(--color-primary); }
+.review-card figcaption { display: flex; align-items: center; gap: .75rem; }
+.review-card figcaption small { display: block; font-weight: 400; color: var(--color-muted); font-size: .9rem; }
+.review-initial { flex: none; display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 50%; background: var(--color-tint); border: 1px solid var(--color-surf); color: var(--color-primary); font-family: var(--font-heading); font-size: 1.2rem; }

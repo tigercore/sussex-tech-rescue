@@ -1,15 +1,39 @@
-{%- if reviews.length %}
+{#- Google reviews come from src/_data/google.js (refreshed daily). Reviews typed into
+    src/_data/reviews.json are shown after them, e.g. ones sent by text or email. -#}
+{%- set googleReviews = google.reviews if (google and google.reviews) else [] %}
+{%- set allReviews = googleReviews.concat(reviews) %}
+{%- if allReviews.length %}
 <section class="section" aria-labelledby="reviews-heading">
   <div class="container">
     <p class="eyebrow">Kind words</p>
     <h2 id="reviews-heading">What my customers say</h2>
-    <div class="card-grid">
-      {%- for r in reviews %}
-      <figure class="review-card">
-        <blockquote>{{ r.text }}</blockquote>
-        <figcaption>{{ r.name }}{% if r.town %}, {{ r.town }}{% endif %}</figcaption>
-      </figure>
-      {%- endfor %}
+    <div class="reviews-layout{% if not (google and google.rating) %} reviews-no-summary{% endif %}">
+      {%- if google and google.rating %}
+      <div class="reviews-summary">
+        <p class="reviews-score">{{ google.rating.toFixed(1) }}</p>
+        <p class="stars" aria-hidden="true">{% for i in range(0, 5) %}{% if i < (google.rating | round) %}★{% else %}<span class="star-off">★</span>{% endif %}{% endfor %}</p>
+        <p class="reviews-count"><span class="visually-hidden">Rated {{ google.rating.toFixed(1) }} out of 5 </span>from {{ google.count }} Google review{% if google.count != 1 %}s{% endif %}</p>
+        {%- if google.url %}
+        <p class="reviews-links">
+          <a href="{{ google.url }}" rel="noopener" target="_blank">See them on Google</a>
+          {%- if google.writeUrl %}<br><a href="{{ google.writeUrl }}" rel="noopener" target="_blank">Leave a review</a>{% endif %}
+        </p>
+        {%- endif %}
+      </div>
+      {%- endif %}
+      <div class="reviews-list">
+        {%- for r in allReviews %}
+        <figure class="review-card">
+          {%- if r.rating %}<p class="stars" role="img" aria-label="{{ r.rating }} out of 5 stars">{% for i in range(0, 5) %}{% if i < r.rating %}★{% else %}<span class="star-off">★</span>{% endif %}{% endfor %}</p>{% endif %}
+          <blockquote>{{ r.text }}{% if r.shortened and r.url %} <a href="{{ r.url }}" rel="noopener" target="_blank">Read it all on Google</a>{% endif %}</blockquote>
+          <figcaption>
+            <span class="review-initial" aria-hidden="true">{{ r.name | first | upper }}</span>
+            <span>{{ r.name }}{% if r.town %}, {{ r.town }}{% endif %}
+              {%- if r.date or r.rating %}<small>{% if r.rating %}Google review{% endif %}{% if r.date and r.rating %}, {% endif %}{{ r.date }}</small>{% endif %}</span>
+          </figcaption>
+        </figure>
+        {%- endfor %}
+      </div>
     </div>
   </div>
 </section>
