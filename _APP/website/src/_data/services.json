@@ -84,6 +84,13 @@
     "blurb": "A PC built for you, gaming or work, parts at cost."
   },
   {
+    "slug": "ps5",
+    "label": "PS5 clean and GTA VI prep",
+    "url": "/ps5-cleaning/",
+    "icon": "gamepad-2",
+    "blurb": "Get your console clean, cool and ready for GTA VI, with room for the download."
+  },
+  {
     "slug": "remote",
     "label": "Remote help",
     "url": "/remote-help/",
