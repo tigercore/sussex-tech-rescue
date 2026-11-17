@@ -1,6 +1,6 @@
 # Sussex Tech Rescue website
 
-A calm, coastal version of the Sunshine Coast Tech site. Colours and fonts live in `src/assets/css/theme.css`; the finishing styles live in `src/assets/css/coastal.css`.
+A calm, coastal version of the Sunshine Coast Tech site. All the styles live in one file, `src/assets/css/site.css`, with the colours and fonts as variables at the top.
 
 Friendly tech help site for Eastbourne, Bexhill and the East Sussex coast. Built with [Eleventy](https://www.11ty.dev/) and hosted on Netlify.
 
@@ -18,7 +18,7 @@ npm run build      # outputs to _site/
 | --- | --- |
 | Business name, phone, WhatsApp, email, hours, site URL | `src/_data/site.json` |
 | Prices | `src/_data/prices.json` |
-| Colours, fonts, corner radius | `src/assets/css/theme.css` |
+| Colours, fonts, corner radius | the variables at the top of `src/assets/css/site.css` |
 | Towns and town page wording | `src/_data/towns.json` (one page is generated per town) |
 | Services menu and homepage service cards | `src/_data/services.json` |
 | "What we fix" cards | `src/_data/fixes.json` |
