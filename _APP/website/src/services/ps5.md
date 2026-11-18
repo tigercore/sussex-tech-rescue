@@ -32,6 +32,6 @@ faqs:
 2. **A clear price.** Labour at my normal rate, plus any parts such as a storage drive, agreed before I start.
 3. **Cleaned and tested.** I clean it out, put it back together and test it under load, so you know it's ready before the game is.
 
-Local to Eastbourne, Bexhill or Hastings? You can drop your console off at **{{ site.dropOff }}** rather than wait in for a visit. Ring me first so I know to expect you.
+Local to Eastbourne, Bexhill or Hastings? You can drop your console off at **{{ site.dropOff }}** by appointment, rather than wait in for a visit. Just ring me to arrange a time.
 
 <small>Sussex Tech Rescue is an independent local business, not connected with Sony Interactive Entertainment or Rockstar Games. PS5 and PlayStation are trademarks of Sony Interactive Entertainment. Grand Theft Auto and GTA are trademarks of Take-Two Interactive.</small>

@@ -189,7 +189,7 @@ h3, .h3 { font-size: 1.5rem; letter-spacing: .02em; }
 /* Tagline under the headline */
 .bubble { display: block; margin: 0 0 1.25rem; font-family: var(--font-body); font-weight: 400; font-style: italic; font-size: 1.35rem; color: var(--color-muted); }
 /* Rotating gadget word in the homepage headline */
-.rotate-word { display: inline-block; color: var(--color-secondary); transition: opacity .3s ease; }
+.rotate-word { display: block; color: var(--color-secondary); transition: opacity .3s ease; }
 /* Friendly line under the homepage H1 */
 .hero-tag { font-family: var(--font-heading); font-size: clamp(1.6rem, 3.2vw, 2.2rem); line-height: 1.15; color: var(--color-primary); margin: 0 0 1rem; }
 .rotate-word.is-out { opacity: 0; }

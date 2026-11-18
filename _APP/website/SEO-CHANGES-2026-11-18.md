@@ -137,12 +137,14 @@ A click on a phone or WhatsApp link shows that someone intended to get in touch.
 
 Only visitors who accept cookies will show up in GA4. Umami counts everyone.
 
-## 8. Questions for you (RECOMMENDED / needs your decision)
+## 8. Questions answered (18 Nov)
 
-1. **Seaford.** Your brief lists Seaford in the service area, but the Seaford town page was removed on 11 Nov ("Remove Seaford from the towns…"), and today `/computer-help-seaford/` was redirected to `/areas/`. The page had been getting 15 impressions at position 26. **Do you cover Seaford?** If you do, I'll bring the page back with its own content and remove the redirect. If you don't, the redirect stays.
-2. **42 Commercial Road.** Is this a public-facing premises that customers can visit, or just a drop-off point? I've left it out of the schema until you confirm. If it's public-facing, adding it (with a postcode) to the schema and your Google profile can help in map results.
-3. **Business IT and web design pages.** Which of the options in section 4 do you want, and when?
-4. **"Lots of my Eastbourne customers are retired…"** This line on the Eastbourne page was already there and I kept it. The same paragraph also mentions helping shops, guest houses and holiday lets with Wi-Fi and card machines. Is that still something you want to promote?
+1. **Seaford: not covered.** The 301 redirect from `/computer-help-seaford/` to `/areas/` stays, and Seaford isn't mentioned anywhere on the site.
+2. **42 Commercial Road: drop-off by appointment only.** It's not a public premises, so the street address stays out of the LocalBusiness schema. Every mention of dropping off there now says "by appointment" (the how-it-works steps, the Eastbourne page, data recovery and PS5).
+3. **Business IT and web design pages: agreed.** They stay live and out of the menu for now. From around **13 January 2027**, add `noindex` to `/business-it-support/` and `/web-design-local-seo/`, keeping the URLs working. This is on `TODO.md`.
+4. **Eastbourne "shops, guest houses and holiday lets" line: kept.**
+
+**Hero fix (also 18 Nov):** the rotating word ("Computer", "iPad", "Wi-Fi"…) now sits on its own line above "playing up? I can help.", so the text around it no longer shifts as the word changes. It was already switched off for visitors who prefer reduced motion.
 
 ## 9. Recommended next steps (not done)
 

@@ -25,11 +25,11 @@ faqs:
   - q: "Do you cover Bexhill and Hastings too?"
     a: "Yes. I visit homes and small businesses across Eastbourne, Bexhill, Hastings and the nearby towns, so you don't need to post your device anywhere."
   - q: "Can I drop my device off?"
-    a: "Yes. You can drop it off at 42 Commercial Road, Eastbourne. Ring me first so I know to expect you."
+    a: "Yes, by appointment, at 42 Commercial Road, Eastbourne. Just ring me to arrange a time."
 ---
 ## Local data recovery, at home or drop-off
 
-I recover lost photos and files for people across Eastbourne, Bexhill and Hastings. I can come to your home or business, or you can drop the device off at **{{ site.dropOff }}**. Either way, looking is free, the price is agreed with you before I start, and if I can't get your files back, you don't pay.
+I recover lost photos and files for people across Eastbourne, Bexhill and Hastings. I can come to your home or business, or you can drop the device off at **{{ site.dropOff }}** by appointment. Either way, looking is free, the price is agreed with you before I start, and if I can't get your files back, you don't pay.
 
 ## Then let's make sure it never happens again
 
