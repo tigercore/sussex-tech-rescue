@@ -24,7 +24,24 @@
       "westham"
     ],
     "lat": 50.7684,
-    "lng": 0.2797
+    "lng": 0.2797,
+    "title": "Computer help and repairs at home in Eastbourne",
+    "h1": "Computer help and repairs in Eastbourne",
+    "description": "Computer and laptop repairs, Wi-Fi, printer, phone and tablet help at home across Eastbourne, from Meads to Sovereign Harbour. Free diagnosis, price agreed first. Call Ryan on 07734 779429.",
+    "sections": [
+      {
+        "heading": "Computer and laptop repairs in Eastbourne",
+        "text": "Slow laptops, computers that won't start, viruses and cracked screens can usually be looked at in your own home. I'll find out what's wrong for free, tell you the cost before I start, and quote any parts first. If you'd rather not wait in, you can drop your computer off at 42 Commercial Road, Eastbourne. Ring me first so I know to expect you."
+      },
+      {
+        "heading": "Wi-Fi, printers, phones and tablets",
+        "text": "From Wi-Fi that won't reach the back bedroom to a printer that has stopped talking to the laptop, I'll fix it and show you what I did. I also set up new phones, tablets and laptops, move your photos and contacts across, and get video calls working so you can keep in touch with family."
+      },
+      {
+        "heading": "Lost files, scams and staying safe",
+        "text": "If you've lost photos or files, stop using the device and ring me, because they can often be recovered. If you think you've been scammed, I'll check your computer, help you secure your accounts and explain what to look out for next time."
+      }
+    ]
   },
   {
     "slug": "bexhill",
@@ -49,7 +66,24 @@
       "hailsham"
     ],
     "lat": 50.8424,
-    "lng": 0.4676
+    "lng": 0.4676,
+    "title": "Computer and laptop repair in Bexhill-on-Sea",
+    "h1": "Computer and laptop help in Bexhill-on-Sea",
+    "description": "Laptop and computer repair, Wi-Fi, printer, phone and tablet help at home in Bexhill, from Sidley to Cooden and Little Common. Free diagnosis, price agreed first. Call Ryan on 07734 779429.",
+    "sections": [
+      {
+        "heading": "Laptop and computer repair in Bexhill",
+        "text": "Laptops that have become painfully slow, won't charge or have picked up a virus can usually be looked at in your own home, from Sidley to Cooden. Diagnosis is free, the price is agreed before I start, and if I can't fix it, you don't pay."
+      },
+      {
+        "heading": "Wi-Fi, printers and new devices",
+        "text": "If the Wi-Fi keeps dropping out in the conservatory or the printer has stopped working again, I'll find out why and fix it properly. I'll also set up new phones, tablets and laptops and show you how to use them, at your own pace."
+      },
+      {
+        "heading": "Scams and staying safe online",
+        "text": "Had a worrying phone call, or clicked a link you weren't sure about? Ring me. I'll check your computer and accounts, put things right, and show you how to spot the next one."
+      }
+    ]
   },
   {
     "slug": "hastings",
@@ -66,13 +100,30 @@
       "Fairlight"
     ],
     "intro": "Hastings has some of the most characterful homes on the coast, and also some of the hardest to get good Wi-Fi in. Steep streets, thick old walls and split-level houses in the Old Town and up towards Ore all play havoc with signals. I visit across Hastings to sort connections, computers and everything in between.",
-    "local": "The town is full of creative freelancers, makers and independent shops, so I spend a lot of time helping people get a website that works, a reliable backup for their work and a Google Business Profile that brings customers through the door.",
+    "local": "Whether you're retired, working from home or running a small shop in the Old Town, I'll sort out the problem, explain it in plain English and leave you a note of what I did, so you're not stuck next time.",
     "nearby": [
       "st-leonards",
       "bexhill"
     ],
     "lat": 50.8552,
-    "lng": 0.573
+    "lng": 0.573,
+    "title": "Computer repairs and help at home in Hastings",
+    "h1": "Computer repairs and help at home in Hastings",
+    "description": "Computer repairs, Wi-Fi, printer, phone and tablet help at home across Hastings, from the Old Town to Ore and Hollington. Free diagnosis, no fix no fee. Call Ryan on 07734 779429.",
+    "sections": [
+      {
+        "heading": "Computer repairs in Hastings",
+        "text": "Whether you're in the Old Town, Ore or out at Hollington, I'll come to you, find out what's wrong for free and fix it at home wherever I can. Viruses, slow start-ups, failing hard drives and laptops that won't charge are all things I can help with. You'll know the price before I start, and if I can't fix it, you don't pay."
+      },
+      {
+        "heading": "Reliable Wi-Fi in older homes",
+        "text": "Thick walls and split levels often need more than a new router. I can check the signal room by room and set up mesh Wi-Fi or a wired access point so every room gets a reliable connection. While I'm there, I'll get printers, smart TVs and tablets connected too."
+      },
+      {
+        "heading": "Help for your parents in Hastings",
+        "text": "If you're arranging help for a mum or dad in Hastings, I can visit them, sort out what's wrong and send you a short note afterwards, if they're happy for me to. They get someone patient and local, and you get peace of mind."
+      }
+    ]
   },
   {
     "slug": "st-leonards",

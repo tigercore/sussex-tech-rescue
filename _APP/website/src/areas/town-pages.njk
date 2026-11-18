@@ -7,6 +7,6 @@ pagination:
 permalink: "/computer-help-{{ town.slug }}/"
 layout: layouts/town.njk
 eleventyComputed:
-  title: "Computer repair and IT support in {{ town.name }}"
-  description: "Friendly computer, Wi-Fi and phone help in {{ town.name }} ({{ town.postcodes }}). {{ prices.hourly | gbp }} an hour, free diagnosis, no fix no fee. Call {{ site.phone }}."
+  title: "{{ town.title or ('Computer help at home in ' + town.name) }}"
+  description: "{% if town.description %}{{ town.description }}{% else %}Friendly computer, Wi-Fi and phone help at home in {{ town.name }} ({{ town.postcodes }}). {{ prices.hourly | gbp }} an hour, free diagnosis, no fix no fee. Call {{ site.phone }}.{% endif %}"
 ---
