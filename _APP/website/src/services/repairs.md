@@ -1,10 +1,10 @@
 ---
 permalink: /computer-repairs-upgrades/
-title: Computer and laptop repairs and upgrades in Eastbourne and Bexhill
+title: Computer and laptop repair in Eastbourne and Bexhill
 description: Laptop and computer repairs, virus removal, tune-ups, upgrades and new device set-up in Eastbourne, Bexhill and East Sussex. Free diagnosis, no fix no fee.
 eyebrow: Repairs and upgrades
-heading: Computer repairs and upgrades
-lede: Cracked screens, spilt drinks, viruses and computers that take too long to start. I'll find out what's wrong for free, then tell you what it'll cost to fix.
+heading: Computer and laptop repairs in Eastbourne
+lede: Cracked screens, spilt drinks, viruses and computers that take too long to start. I'll find out what's wrong for free, then tell you what it'll cost to fix. I come to you anywhere from Eastbourne to Hastings, or you can drop it off in Eastbourne.
 formProblem: Repairs and upgrades
 chips: ["Free diagnosis", "No fix, no fee", "Parts quoted first"]
 problemsHeading: What I fix and upgrade

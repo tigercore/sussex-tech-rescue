@@ -35,7 +35,7 @@ faqs:
 Many people tell me they feel left behind by technology, or that they hate asking the family for help again. That's what I'm here for. I go at your pace, explain things in everyday language and check you're happy before moving on.
 
 - **Time to talk.** Visits aren't rushed, and questions are always welcome.
-- **Show, don't tell.** I'll walk you through it on your own device, so it actually sticks.
+- **Show, don't tell.** I'll walk you through it on your own device, so it actually sticks. If you'd like to learn more, try my [one-to-one tech lessons](/tech-lessons/).
 - **Staying safe.** I'll show you how to spot scam emails, texts and phone calls.
 - **Someone to ring.** Once we've met, you've got a friendly local face to call next time.
 
