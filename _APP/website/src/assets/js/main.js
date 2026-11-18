@@ -1,12 +1,3 @@
-// Header badge: tuck it into the header bar once the page has scrolled.
-(function () {
-  var header = document.querySelector(".site-header");
-  if (!header) return;
-  var update = function () { header.classList.toggle("is-scrolled", window.scrollY > 40); };
-  update();
-  window.addEventListener("scroll", update, { passive: true });
-})();
-
 // Mobile menu and Services dropdown.
 (function () {
   var toggle = document.querySelector(".nav-toggle");
