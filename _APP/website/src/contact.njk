@@ -16,6 +16,7 @@ description: Book a visit or ask a question. Call or WhatsApp Ryan on 07734 7794
     <div class="card"><span class="card-icon">{% icon "phone" %}</span><h2 class="h3">Call</h2><p><a href="tel:{{ site.phoneLink }}">{{ site.phone }}</a><br><span class="small">{{ site.hours }}</span></p></div>
     <div class="card"><span class="card-icon">{% icon "message-circle" %}</span><h2 class="h3">WhatsApp</h2><p><a href="https://wa.me/{{ site.whatsapp }}">Message me on WhatsApp</a><br><span class="small">Send a photo of the problem or the error message.</span></p></div>
     <div class="card"><span class="card-icon">{% icon "mail" %}</span><h2 class="h3">Email</h2><p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p></div>
+    {% if site.facebook %}<div class="card"><span class="card-icon">{% icon "facebook" %}</span><h2 class="h3">Facebook</h2><p><a href="{{ site.facebook }}" rel="noopener">Message me on Facebook</a><br><span class="small">Tips, news and local updates too.</span></p></div>{% endif %}
   </div>
 </section>
 {% include "partials/booking.njk" %}

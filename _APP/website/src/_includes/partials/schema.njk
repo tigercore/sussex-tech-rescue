@@ -13,6 +13,7 @@
   "openingHours": {{ site.hoursSchema | dump | safe }},
   "priceRange": "££",
   "address": { "@type": "PostalAddress", "addressLocality": {{ site.base | dump | safe }}, "addressRegion": {{ site.county | dump | safe }}, "addressCountry": "GB" },
-  "areaServed": {{ areaNames | dump | safe }}
+  "areaServed": {{ areaNames | dump | safe }}{% if site.facebook %},
+  "sameAs": [{{ site.facebook | dump | safe }}]{% endif %}
 }
 </script>
