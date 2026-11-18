@@ -1,11 +1,15 @@
 {%- set areaNames = [] %}{% for t in towns %}{% set areaNames = (areaNames.push(t.name), areaNames) %}{% endfor -%}
+{%- set sameAs = [] %}{% if site.facebook %}{% set sameAs = (sameAs.push(site.facebook), sameAs) %}{% endif %}{% if site.googleMaps %}{% set sameAs = (sameAs.push(site.googleMaps), sameAs) %}{% endif -%}
+{#- One LocalBusiness for the whole site, referenced by @id from the other blocks. No street address:
+    the business visits customers, and 42 Commercial Road is only listed as a drop-off point. #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "{{ site.url }}/#business",
   "name": {{ site.name | dump | safe }},
   "description": {{ site.tagline | dump | safe }},
-  "url": {{ site.url | dump | safe }},
+  "url": "{{ site.url }}/",
   "logo": "{{ site.url }}/assets/img/logo.png",
   "image": "{{ site.url }}/assets/img/og-image.png",
   "telephone": {{ site.phoneLink | dump | safe }},
@@ -13,7 +17,37 @@
   "openingHours": {{ site.hoursSchema | dump | safe }},
   "priceRange": "££",
   "address": { "@type": "PostalAddress", "addressLocality": {{ site.base | dump | safe }}, "addressRegion": {{ site.county | dump | safe }}, "addressCountry": "GB" },
-  "areaServed": {{ areaNames | dump | safe }}{% if site.facebook %},
-  "sameAs": [{{ site.facebook | dump | safe }}]{% endif %}
+  "areaServed": {{ areaNames | dump | safe }}{% if sameAs.length %},
+  "sameAs": {{ sameAs | dump | safe }}{% endif %}{% if site.googleMaps %},
+  "hasMap": {{ site.googleMaps | dump | safe }}{% endif %}
 }
 </script>
+{%- if page.url != "/" and title %}
+{%- set crumbName = (town.name if town else (eyebrow or title)) %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" }{% if town %},
+    { "@type": "ListItem", "position": 2, "name": "Areas", "item": "{{ site.url }}/areas/" },
+    { "@type": "ListItem", "position": 3, "name": {{ town.name | dump | safe }}, "item": "{{ site.url }}{{ page.url }}" }{% else %},
+    { "@type": "ListItem", "position": 2, "name": {{ crumbName | dump | safe }}, "item": "{{ site.url }}{{ page.url }}" }{% endif %}
+  ]
+}
+</script>
+{%- endif %}
+{%- set svc = null %}{% for s in services %}{% if s.url == page.url and not s.secondary %}{% set svc = s %}{% endif %}{% endfor %}
+{%- if svc %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ svc.label | dump | safe }},
+  "description": {{ (description or svc.blurb) | dump | safe }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "provider": { "@id": "{{ site.url }}/#business" },
+  "areaServed": {{ areaNames | dump | safe }}
+}
+</script>
+{%- endif %}

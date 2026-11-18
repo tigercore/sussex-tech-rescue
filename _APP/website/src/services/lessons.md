@@ -1,7 +1,7 @@
 ---
 permalink: /tech-lessons/
 title: Computer lessons at home in Eastbourne and Bexhill, one-to-one
-description: Friendly one-to-one computer, phone and tablet lessons at home in Eastbourne, Bexhill and Hastings. Ideal for beginners and older learners. Plain English, at your own pace.
+description: One-to-one computer, phone and tablet lessons at home in Eastbourne, Bexhill and Hastings, for beginners and older learners. Plain English, at your own pace.
 eyebrow: Tech lessons
 heading: One-to-one tech lessons at home. No homework.
 lede: Want to actually understand the thing, not just have it fixed? I'll sit with you at your kitchen table (or your office) and teach you, one-to-one, in plain English, at whatever pace suits you. Complete beginners and older learners are very welcome.

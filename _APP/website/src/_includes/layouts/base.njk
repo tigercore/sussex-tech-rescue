@@ -7,6 +7,8 @@
   <title>{{ pageTitle }}</title>
   <meta name="description" content="{{ description or site.tagline }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {%- if noindex %}
+  <meta name="robots" content="noindex">{% endif %}
   <meta property="og:title" content="{{ pageTitle }}">
   <meta property="og:description" content="{{ description or site.tagline }}">
   <meta property="og:type" content="website">
