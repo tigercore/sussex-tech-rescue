@@ -73,11 +73,11 @@ description: Friendly, patient computer help at home in Eastbourne, Bexhill and 
 <section class="section" aria-labelledby="who-heading">
   <div class="container">
     <p class="eyebrow">Who I help</p>
-    <h2 id="who-heading">Help for you, your parents or your business</h2>
+    <h2 id="who-heading">Help for you and your family</h2>
     <div class="who-grid">
       <a class="card card-link" href="#help"><span class="card-icon">{% icon "user" %}</span><h3>For me</h3><p>Something's not working at home, and you'd like someone to sort it and explain it kindly.</p></a>
       <a class="card card-link" href="/help-for-your-parents/"><span class="card-icon">{% icon "users" %}</span><h3>For my mum or dad</h3><p>Arrange help for your parents. I'll deal with them directly and let you know how it went.</p></a>
-      <a class="card card-link" href="/business-it-support/"><span class="card-icon">{% icon "briefcase" %}</span><h3>For my business</h3><p>Pay-as-you-go IT help, websites and Google listings for small local businesses.</p></a>
+      <a class="card card-link" href="/tech-lessons/"><span class="card-icon">{% icon "lightbulb" %}</span><h3>To learn it myself</h3><p>One-to-one lessons at your kitchen table, so you can do it yourself next time.</p></a>
     </div>
   </div>
 </section>
@@ -141,7 +141,7 @@ description: Friendly, patient computer help at home in Eastbourne, Bexhill and 
     <h2 id="more-heading">What else can I do?</h2>
     <div class="card-grid">
       {#- Parents help is already featured in the "Who I help" section above. #}
-      {%- for s in services %}{% if s.slug != "family" %}
+      {%- for s in services %}{% if s.slug != "family" and not s.secondary %}
       <a class="card card-link" href="{{ s.url }}">
         <span class="card-icon">{% icon s.icon %}</span>
         <h3>{{ s.label }}</h3>
@@ -149,6 +149,7 @@ description: Friendly, patient computer help at home in Eastbourne, Bexhill and 
       </a>
       {%- endif %}{% endfor %}
     </div>
+    <p class="ask-more">I can also help with <a href="/microsoft-365-google-help/">Microsoft 365, Outlook and Gmail</a>, build <a href="/custom-pc-builds/">custom PCs</a> and give a tired <a href="/ps5-cleaning/">PS5 a proper clean</a>.</p>
   </div>
 </section>
 

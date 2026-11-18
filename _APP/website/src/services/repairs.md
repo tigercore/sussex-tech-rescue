@@ -5,7 +5,7 @@ description: Laptop and computer repairs, virus removal, tune-ups, upgrades and 
 eyebrow: Repairs and upgrades
 heading: Computer and laptop repairs in Eastbourne
 lede: Cracked screens, spilt drinks, viruses and computers that take too long to start. I'll find out what's wrong for free, then tell you what it'll cost to fix. I come to you anywhere from Eastbourne to Hastings, or you can drop it off in Eastbourne.
-formProblem: Repairs and upgrades
+formProblem: Computer repairs and upgrades
 chips: ["Free diagnosis", "No fix, no fee", "Parts quoted first"]
 problemsHeading: What I fix and upgrade
 problems:

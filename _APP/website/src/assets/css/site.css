@@ -348,6 +348,8 @@ h3, .h3 { font-size: 1.5rem; letter-spacing: .02em; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: .35rem; }
 .footer-heading { color: #fff; font-size: 1.05rem; font-weight: 400; letter-spacing: 0; }
+.footer-heading-minor { margin-top: 1.5rem; font-size: .95rem; opacity: .85; }
+.footer-minor { font-size: .92rem; }
 .brand-footer { display: inline-block; margin-bottom: .5rem; }
 .brand-footer .logo-mark { height: 120px; }
 .footer-base { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; padding-top: 1.25rem; font-size: .9rem; }

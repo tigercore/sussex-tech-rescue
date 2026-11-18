@@ -5,7 +5,7 @@ description: Fix Wi-Fi dead spots with mesh Wi-Fi, access points and wired conne
 eyebrow: Wi-Fi installation
 heading: Reliable Wi-Fi in every room
 lede: Seaside homes can be difficult for Wi-Fi. Thick walls, long bungalows, flats over three floors and garden offices all make dead spots. I find the problem and fix it for good.
-formProblem: Wi-Fi installation
+formProblem: Wi-Fi help and installation
 chips: ["Mesh Wi-Fi", "Garden offices", "Business and guest Wi-Fi"]
 problemsHeading: Common Wi-Fi problems I fix
 problems:

@@ -13,8 +13,12 @@
     <div>
       <h2 class="footer-heading">Services</h2>
       <ul>
-        <li><a href="/#help">Home tech help</a></li>
-        {%- for s in services %}<li><a href="{{ s.url }}">{{ s.label }}</a></li>{% endfor %}
+        <li><a href="/#help">Home computer help</a></li>
+        {%- for s in services %}{% if not s.secondary %}<li><a href="{{ s.url }}">{{ s.label }}</a></li>{% endif %}{% endfor %}
+      </ul>
+      <h2 class="footer-heading footer-heading-minor">Also available</h2>
+      <ul class="footer-minor">
+        {%- for s in services %}{% if s.secondary %}<li><a href="{{ s.url }}">{{ s.label }}</a></li>{% endif %}{% endfor %}
       </ul>
     </div>
     <div>

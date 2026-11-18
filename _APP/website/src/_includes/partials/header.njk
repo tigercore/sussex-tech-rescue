@@ -20,10 +20,10 @@
         <li class="has-sub">
           <button class="sub-toggle" aria-expanded="false">Services</button>
           <ul class="sub-menu">
-            <li><a href="/#help">Home tech help</a></li>
-            {%- for s in services %}
+            <li><a href="/#help">Home computer help</a></li>
+            {%- for s in services %}{% if not s.secondary %}
             <li><a href="{{ s.url }}"{% if page.url == s.url %} aria-current="page"{% endif %}>{{ s.label }}</a></li>
-            {%- endfor %}
+            {%- endif %}{% endfor %}
           </ul>
         </li>
         <li><a href="/#pricing">Pricing</a></li>
