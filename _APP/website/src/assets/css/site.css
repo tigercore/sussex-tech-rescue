@@ -131,7 +131,18 @@ h3, .h3 { font-size: 1.5rem; letter-spacing: .02em; }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
 .logo-mark { display: block; height: 84px; width: auto; transition: transform .2s ease; }
 .brand:hover .logo-mark { transform: rotate(-4deg) scale(1.03); }
-@media (max-width: 960px) { .logo-mark { height: 60px; } }
+/* Header badge: hangs below the white header bar like a sticker, then tucks
+   back inside the bar once the page scrolls (or the mobile menu opens). */
+.site-header .header-inner { min-height: 72px; }
+.site-header .brand { position: relative; align-self: stretch; flex: none; width: 150px; }
+.site-header .logo-mark { position: absolute; left: 0; top: .55rem; z-index: 2; height: 152px; filter: drop-shadow(0 6px 14px rgba(18, 52, 77, .28)); transition: height .25s ease, top .25s ease, transform .2s ease; }
+.site-header.is-scrolled .logo-mark, .site-header:has(.site-nav.open) .logo-mark { height: 62px; top: .3rem; filter: none; }
+@media (max-width: 960px) {
+  .site-header .header-inner { min-height: 60px; }
+  .site-header .brand { width: 100px; }
+  .site-header .logo-mark { top: .4rem; height: 100px; }
+  .site-header.is-scrolled .logo-mark, .site-header:has(.site-nav.open) .logo-mark { height: 52px; top: .25rem; }
+}
 .site-nav ul { list-style: none; margin: 0; padding: 0; }
 .site-nav > ul { display: flex; align-items: center; gap: .25rem; }
 .site-nav a, .sub-toggle { display: block; padding: .5rem .75rem; color: var(--color-text); text-decoration: none; font-weight: 600; font-size: 1rem; background: none; border: 0; font-family: inherit; cursor: pointer; border-radius: var(--radius-small); }
