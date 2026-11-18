@@ -1,14 +1,15 @@
 ---
 layout: layouts/base.njk
-description: Friendly, patient computer help at home in Eastbourne, Bexhill and Hastings, for computers, phones, tablets, printers and Wi-Fi. Plain English, price agreed first.
+title: "Computer Help at Home in Eastbourne, Hastings & Bexhill"
+description: Need computer help at home in Eastbourne, Bexhill or Hastings? Friendly support for laptops, Wi-Fi, printers and phones. Clear prices, no jargon. Call today.
 ---
 <section class="hero">
   <div class="container hero-inner">
     <div class="hero-copy">
       <p class="eyebrow">Eastbourne · Bexhill · Hastings</p>
-      <h1><span class="visually-hidden">Computer playing up? </span><span aria-hidden="true"><span class="rotate-word" data-words="Computer,iPad,Alexa,Phone,Laptop,Printer,Wi-Fi,Telly,Email,Tablet">Computer</span> playing up? </span><span class="line2">I can help.</span></h1>
-      <p class="bubble">Friendly, patient computer help at home</p>
-      <p class="lede">Computers, phones, tablets, printers, Wi-Fi: I'll come to your home, sort out the problem and explain it in plain English. No jargon and no judgement.</p>
+      <h1>Computer help at home <span class="line2">across East Sussex</span></h1>
+      <p class="hero-tag"><span class="visually-hidden">Computer playing up? </span><span aria-hidden="true"><span class="rotate-word" data-words="Computer,iPad,Alexa,Phone,Laptop,Printer,Wi-Fi,Telly,Email,Tablet">Computer</span> playing up?</span> I can help.</p>
+      <p class="lede">Computers, laptops, Wi-Fi, printers, phones and tablets: I'll come to your home in Eastbourne, Bexhill, Hastings or nearby, sort out the problem and explain it in plain English. No jargon and no judgement, and you'll always deal with me, not a call centre.</p>
       <div class="btn-row">
         <a href="tel:{{ site.phoneLink }}" class="btn btn-primary">Call {{ site.phone }}</a>
         <a href="#book" class="btn btn-accent">Book a visit</a>
@@ -18,7 +19,7 @@ description: Friendly, patient computer help at home in Eastbourne, Bexhill and 
         <li>I come to you</li>
         <li>{{ prices.diagnosis }}</li>
         <li>Price agreed first</li>
-        <li>Zero jargon</li>
+        {%- if site.dbs %}<li>{{ site.dbs }}</li>{% endif %}
       </ul>
     </div>
     <figure class="hero-badge">{% include "partials/logo.njk" %}</figure>
