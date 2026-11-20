@@ -63,7 +63,8 @@
       "st-leonards",
       "hastings",
       "pevensey",
-      "hailsham"
+      "hailsham",
+      "battle"
     ],
     "lat": 50.8424,
     "lng": 0.4676,
@@ -103,7 +104,8 @@
     "local": "Whether you're retired, working from home or running a small shop in the Old Town, I'll sort out the problem, explain it in plain English and leave you a note of what I did, so you're not stuck next time.",
     "nearby": [
       "st-leonards",
-      "bexhill"
+      "bexhill",
+      "battle"
     ],
     "lat": 50.8552,
     "lng": 0.573,
@@ -142,10 +144,54 @@
     "local": "I help people working from home, students and retired residents alike. If you'd rather have a quick fix without a visit, remote help is often the fastest way to get sorted, and I can usually connect the same day. Small businesses, cafés and shops along Norman Road and the seafront are welcome too, and I can arrange visits around your opening hours.",
     "nearby": [
       "hastings",
-      "bexhill"
+      "bexhill",
+      "battle"
     ],
     "lat": 50.854,
     "lng": 0.547
+  },
+  {
+    "slug": "battle",
+    "name": "Battle",
+    "postcodes": "TN33",
+    "travel": "Around 35 minutes from base",
+    "areas": [
+      "Town centre",
+      "Telham",
+      "Netherfield",
+      "Sedlescombe",
+      "Catsfield",
+      "Crowhurst",
+      "Whatlington",
+      "Ninfield"
+    ],
+    "intro": "Battle is a small market town with a big history, and the villages around it are some of the prettiest in East Sussex. They can also be some of the trickiest for broadband. From the High Street by the Abbey out to Netherfield, Sedlescombe and Catsfield, I'll come to your home and sort out the computer, Wi-Fi or phone that's giving you grief.",
+    "local": "Out here, the problem is often the connection rather than the computer. Long lines back to the exchange, old copper phone wiring and thick walls in cottages and farmhouses all slow things down. I'll test what's actually reaching your house, tell you honestly whether a new router, mesh Wi-Fi or a different broadband deal will help, and set it up so it just works.",
+    "nearby": [
+      "bexhill",
+      "hastings",
+      "st-leonards",
+      "hailsham"
+    ],
+    "lat": 50.9177,
+    "lng": 0.4836,
+    "title": "Computer help and repairs at home in Battle",
+    "h1": "Computer help and repairs at home in Battle",
+    "description": "Computer and laptop repairs, Wi-Fi, broadband, printer, phone and tablet help at home in Battle and nearby villages. Free diagnosis, price agreed first. Call Ryan on 07734 779429.",
+    "sections": [
+      {
+        "heading": "Computer and laptop repairs in Battle",
+        "text": "Slow laptops, computers that won't start, viruses and failing hard drives can usually be looked at at your kitchen table, so there's no need to take anything into Hastings or Tunbridge Wells. Diagnosis is free, you'll know the price before I start, and if I can't fix it, you don't pay."
+      },
+      {
+        "heading": "Better Wi-Fi and broadband in rural homes",
+        "text": "If the signal gives up in the back bedroom, the garden office or the annexe, I can check it room by room and set up mesh Wi-Fi or a wired access point. If full fibre or a different provider has become available in your village, I can help you switch and get everything reconnected afterwards, including the landline if it's moving to a digital phone line."
+      },
+      {
+        "heading": "New devices, scams and help for your parents",
+        "text": "I'll set up new phones, tablets and laptops, move your photos and contacts across, and show you how to use them at your own pace. If you're worried about a scam call or email, ring me and I'll check things over. And if you're arranging help for a mum or dad near Battle, I can visit them and send you a short note afterwards, if they're happy for me to."
+      }
+    ]
   },
   {
     "slug": "polegate",
